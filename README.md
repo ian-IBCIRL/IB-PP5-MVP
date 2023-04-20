@@ -2,15 +2,15 @@
 
 Welcome  
 
-This is the Code Institute student PP5 walkthrough Boutique Ado readme for the project deployed to [https://ib-pp5-ado.herokuapp.com/](https://ib-pp5-ado.herokuapp.com/)
+This is my Code Institute student PP5 final project PolicyShop readme for the project deployed to [https://ib-pp5-polshop.herokuapp.com/](https://ib-pp5-polshop.herokuapp.com/)
 
 Note: To open any links in this README in a new browser tab, press CTRL + Click or right click and open in new tab/window.
 
-# Boutique Ado
+# PolicyShop
 
 ### By [Ian Bowell](https://www.instagram.com/skianianiam/)
 
-## **[Live site](https://ib-pp5-ado.herokuapp.com/)**
+## **[Live site](https://ib-pp5-polshop.herokuapp.com/)**
 
 ---
 
@@ -31,84 +31,84 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 ## Introduction
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
-Boutique Ado is a website built in Django using Python, JavaScript, CSS and HTML. 
+PolicyShop is a website built in Django using Python, JavaScript, CSS and HTML. 
 
 ## Features
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Features here
 
 ## Future Enhancements
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Future Enhancements here
 
 ## Technologies Used
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Technologies used here
 
 ## Agile Development
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Agile here
 
 ## Testing
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Testing here
 
 ## UX
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 UX here
 
 ## Deployment
 
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 Deployment here
 
 
 ## Release History
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#the-garage) 
+* [Back to top of README.md](#policyshop) 
 
 We continually tweak and adjust this.
 
 Here is the version history:
 
-**20 March 2023:** Begin MVP planning.
+**20 April 2023:** Begin MVP planning.
 
-**04 April 2023:** Successful initial heroku deployment.
+**04 May 2023:** Successful initial heroku deployment.
 
-**20 April 2023:** Successful initial post deletion logic. Needs more checks and post editing/adding.
+**20 May 2023:** Successful initial post deletion logic. Needs more checks and post editing/adding.
 
-**20 May 2023:** Successful deployment of submission features.
+**10 June 2023:** Successful deployment of submission features.
 
-**16 June 2023:** Final deployment of submission features, following further documentation and testing.
+**17 June 2023:** Final deployment of submission features, following further documentation and testing.
 
 ------
 
 
 ## Credits
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -125,7 +125,7 @@ Here is the version history:
 
 ## Reminders
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
 
 To install django, `pip3 install 'django<4' gunicorn`
 
@@ -135,10 +135,10 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/
 A Web Server Gateway Interface (WSGI) server implements the web server side of the WSGI interface for running Python web applications.
 https://www.fullstackpython.com/wsgi-servers.html 
 
-You may also want to install the following packages for the database and storage in Cloudinary.
+You may also want to install the following packages for the database and storage in Cloudinary or AWS.
 Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 and `pip3 install dj_database_url==0.5.0 psycopg2`
-and `pip3 install dj3-cloudinary-storage`
+and `pip3 install dj3-cloudinary-storage` or the AWS equivalent that we use here for static data
 
 Once all is installed, you can record the installed packages to requirements.txt 
 with `pip3 freeze > requirements.txt`
@@ -149,10 +149,10 @@ and reload them with `pip3 install -r requirements.txt`
 To create the essential manage.py file and the key step in enabling the site to launch
 use `django-admin startproject "put your appname here" .` DON'T forget the DOT at the end !!
 
-We used garageblog for our blog about cars and other vehicles. Here we use `boutique-ado`
+Here we use `policyshop`
 Don't forget the DOT at the end as this tells Django admin that we want to create our project in the current top level folder.
 
-Then use `python3 manage.py startapp vehicles` for example, to create the vehicles app within the project
+Then use `python3 manage.py startapp basket` for example, to create the order basket app within the project
 
 And we update `settings.py` with details for the apps, hosts and secrets etc.
 Remove the default SECRET_KEY secret entry in settings.py and use the env.py load method detailed below.
@@ -184,9 +184,9 @@ To set up a app/database admin we need `python3 manage.py createsuperuser`
 To install the app in Heroku you need:
 
 1) Environment variables from env.py in your Heroku app settings
-2) A Procfile to run the webserver i.e. `web: gunicorn boutique-ado.wsgi` 
+2) A Procfile to run the webserver i.e. `web: gunicorn policyshop.wsgi` 
     
-    in this case to run my boutique app on the gunicorn wsgi webserver.
+    in this case to run my policyshop app on the gunicorn wsgi webserver.
 
 Remember also to `python manage.py collectstatic`
 
@@ -216,4 +216,4 @@ Yes! We'd strongly encourage you to look at the source code!
 
 Happy coding!
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#boutique-ado) 
+* [Back to top of README.md](#policyshop) 
