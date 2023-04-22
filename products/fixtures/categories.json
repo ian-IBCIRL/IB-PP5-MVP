@@ -1,0 +1,122 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "cybersecurity",
+            "friendly_name": "CyberSecurity"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "compliance",
+            "friendly_name": "Compliance"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "humanresources",
+            "friendly_name": "HR"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "essentials",
+            "friendly_name": "Essentials"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "endpoint",
+            "friendly_name": "Endpoint"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "email",
+            "friendly_name": "email"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "logs",
+            "friendly_name": "Logs"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "employment",
+            "friendly_name": "Employment"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.category",
+        "fields": {
+            "name": "bcp",
+            "friendly_name": "Business Continuity"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.category",
+        "fields": {
+            "name": "disasterrecovery",
+            "friendly_name": "Disaster Recovery"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.category",
+        "fields": {
+            "name": "incidentmanagement",
+            "friendly_name": "Incident Management"
+        }
+    },  
+     {
+        "pk": 14,
+        "model": "products.category",
+        "fields": {
+            "name": "ransomware",
+            "friendly_name": "Ransomware"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.category",
+        "fields": {
+            "name": "network",
+            "friendly_name": "Network"
+        }
+    }
+]

@@ -38,7 +38,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ib-pp5-polshop.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -50,6 +50,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'home',
+    'products',
+    # 'order',
+    # 'checkout',
+    # 'profiles',
+    # 'contact',
+    # 'faqs',
+    # 'privacy',
+
+    # others
+    'crispy_forms',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -62,7 +78,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pp5.urls'
+ROOT_URLCONF = 'polshop.urls'
 
 TEMPLATES = [
     {
@@ -80,7 +96,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pp5.wsgi.application'
+WSGI_APPLICATION = 'polshop.wsgi.application'
 
 
 # Database
