@@ -1,0 +1,114 @@
+<div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Policies
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity">Cybersecurity</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Compliance">Compliance</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity,HR,Compliance">All
+                        Policies</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cybersecurity
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Incident%20Response">Incident Response</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Endpoint%20Protection">Endpoint
+                        Protection</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Other">Other</a></li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=Incident%20Response,Endpoint%20Protection,Other">All Cybersecurity</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HR
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Acceptable Use">AUP</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working">Remote Working</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working,HR,,Acceptable%20Use">All HR</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Systems
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Workstations">Workstations</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Servers">Servers</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Networking">Networking</a>
+                </li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Systems
+                        Products</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown d-none d-lg-block">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+            </a>
+            <ul class="dropdown-menu">
+                {% if user.is_authenticated %}
+                {% if user.is_superuser %}
+                <li><a class="dropdown-item" href="{% url 'add_product' %}">Product Management</a></li>
+                {% endif%}
+                <li><a class="dropdown-item" href="">My Profile</a></li>
+                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
+                {% else %}
+                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                <li><a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a></li>
+                {% endif %}
+            </ul>
+        </li>
+        <li class="nav-item list-inline-item d-none d-lg-flex">
+            <a class="{% if grand_total %}text-info font-weighht-bold {% else %}text-black {% endif %} nav-link"
+                href="">
+                <div class="shopping-cart">
+                    <i class="fas fa-shopping-cart"><span
+                            class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
+                    </i>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item shop-all-width">
+            <a class="nav-link shop-all-nav" href="{% url 'products' %}" role="button">
+                ShopAll
+            </a>
+        </li>
+    </ul>
+    <form class="d-flex d-none d-lg-flex" role="search" method="GET" action="{% url 'products' %}">
+        <input class="form-control me-2 search-bar" type="search" name="q" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success search-button" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+
+<script>
+    // hover effect on search icon
+    $('.search-button').hover(function () {
+        $(".navbar-nav").hide(1000);
+        $(".search-bar").show().animate({
+            width: "100%"
+        }, 'slow')
+        $(".navigation-fluid-bar").css({
+            width: "30%"
+        })
+    })
+
+    // this block of code is taken from 
+    // https://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it
+    $(document).on('click', function (e) {
+        if ($(e.target).closest(".search-bar").length === 0) {
+            $(".search-bar").hide().css({
+                'width': '0'
+            }, );
+            $(".navbar-nav").fadeIn(2000)
+        }
+    });
+</script>
