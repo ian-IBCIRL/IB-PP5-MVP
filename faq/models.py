@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Faq(models.Model):
+class Faqs(models.Model):
     """"
     Frequently asked questions
     """
