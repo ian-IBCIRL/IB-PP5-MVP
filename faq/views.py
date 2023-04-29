@@ -9,7 +9,7 @@ def faq(request):
     """
     Display faqs on the faq page
     """
-    faq = Faq.objects.all()
+    faq = Faqs.objects.all()
 
     template = 'faq/faq.html'
 
