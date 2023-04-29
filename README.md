@@ -219,10 +219,11 @@ python3 manage.py loaddata categories
 
 ### load products fixtures into database
 ```
-python3 manage.py loaddata categories
+python3 manage.py loaddata products
 # should say - Installed 172 object(s) from 1 fixture(s)
 ```
 
+don't forget custom_storeages.py for AWS S3 support.
 
 To install the app in Heroku you need:
 
