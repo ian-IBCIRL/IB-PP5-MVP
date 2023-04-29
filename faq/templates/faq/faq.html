@@ -85,7 +85,7 @@
                     {% if request.user.is_superuser %}
                     <small><a class="faqs text-decoration-none" href="{% url 'edit_faq' f.id %}"> Edit FAQ</a></small>
                     |
-                    <small><a class="faqs text-decoration-none" href="{% url 'delete_faqs' f.id %}"> Delete FAQ</a></small>
+                    <small><a class="faqs text-decoration-none" href="{% url 'delete_faq' f.id %}"> Delete FAQ</a></small>
                     {% endif %}
                 </div>
             </div>

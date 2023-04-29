@@ -14,7 +14,7 @@ def faq(request):
     template = 'faq/faq.html'
 
     context = {
-        'faq': faq,
+        'faqs': faq,
     }
 
     return render(request, template, context)
@@ -30,7 +30,7 @@ def add_faq(request):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = FaqForm(request.POST)
+        form = FaqsForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'FAQ added successfully!')
@@ -41,7 +41,7 @@ def add_faq(request):
                      Please ensure the form is valid.'
             )
     else:
-        form = FaqForm()
+        form = FaqsForm()
 
     template = 'faq/add_faq.html'
     context = {
@@ -60,10 +60,10 @@ def edit_faq(request, item_id):
         messages.error(request, 'Sorry - You are not authorised')
         return redirect(reverse('home'))
 
-    item = get_object_or_404(Faq, pk=item_id)
+    item = get_object_or_404(Faqs, pk=item_id)
 
     if request.method == 'POST':
-        form = FaqForm(request.POST, instance=item)
+        form = FaqsForm(request.POST, instance=item)
         if form.is_valid():
             form.save()
             messages.success(request, 'FAQ updated successfully!')
@@ -91,7 +91,7 @@ def delete_faq(request, item_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry - You are not authorised')
         return redirect(reverse('home'))
-    item = get_object_or_404(Faq, pk=item_id)
+    item = get_object_or_404(Faqs, pk=item_id)
     item.delete()
     messages.success(request, f'{item} is deleted successfully !')
     return redirect('faq')
