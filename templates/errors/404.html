@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container my-auto text-center">
+    <h1 class="my-5 text-black">
+        Page not found
+    </h1>
+    <p>The page you were looking for doesn't exist.</p>
+    <p>You may have mistyped the address or the page may have moved.</p>
+    <div class="my-5">
+        <a class="text-decoration-none category-badge" href="{% url 'home' %}">
+            Back to Home <i class="fas fa-arrow-alt-circle-left" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+{% endblock %}
