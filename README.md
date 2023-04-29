@@ -149,7 +149,7 @@ and reload them with `pip3 install -r requirements.txt`
 To create the essential manage.py file and the key step in enabling the site to launch
 use `django-admin startproject "put your appname here" .` DON'T forget the DOT at the end !!
 
-Here we use `policyshop`
+Here we use `polshop`
 Don't forget the DOT at the end as this tells Django admin that we want to create our project in the current top level folder.
 
 Then use `python3 manage.py startapp basket` for example, to create the order basket app within the project
@@ -165,7 +165,7 @@ Use `python3 manage.py runserver` to launch web server once the environment vari
 python3 manage.py runserver
 ```
 
-We add the app with `python3 manage.py startapp blog` for example
+We add the app with `python3 manage.py startapp polshop` for example
 
 Then we need to migrate the changes to the database etc with `python3 manage.py migrate`
 
@@ -180,6 +180,49 @@ if os.path.isfile('env.py'):
 ```
 
 To set up a app/database admin we need `python3 manage.py createsuperuser`
+
+
+### add an admin user
+To set up a app/database admin we need `python3 manage.py createsuperuser`
+
+in settings.py add EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+add ACCOUNT_ and LOGIN_ settings too.
+
+use `cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* templates/allauth` to copy the baseline allauth html etc to allow modification with prioritised files
+
+The base.html for the site can be obtained from https://getbootstrap.com/
+and the version for this from https://getbootstrap.com/docs/4.6/getting-started/introduction/ with changes to replace the slim version with the full popper version.
+
+once this is setup then we can set up a home page app with 
+`manage.py startapp home`
+
+Then we can create and edit index.html in `home/templates/home` and extend base.html 
+
+### add a favicon
+
+To add a favicon.ico to /static, add `<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>` to base.html and `STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]` to settings.py
+
+Do the same for media dirs etc.
+
+### enable fontawesome icon use
+add `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">` to base.html to get icons for menu buttons etc.
+
+### load categories fixtures into database
+```
+python3 manage.py loaddata categories
+# should say - Installed 9 object(s) from 1 fixture(s) 
+# Don't forget to install requirements.txt via `pip3 install -r requirements.txt`
+# and don't forget (if it's a new database) to 'python3 manage.py makemigrations' 
+# and 'python3 manage.py migrate' to get the extra fields for category etc.
+```
+
+### load products fixtures into database
+```
+python3 manage.py loaddata categories
+# should say - Installed 172 object(s) from 1 fixture(s)
+```
+
 
 To install the app in Heroku you need:
 
