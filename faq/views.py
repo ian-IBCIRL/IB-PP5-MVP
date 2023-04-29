@@ -72,7 +72,7 @@ def edit_faq(request, item_id):
             messages.info(request, 'Failed to update.\
                 Please ensure the form is valid.')
     else:
-        form = FaqForm(instance=item)
+        form = FaqsForm(instance=item)
 
     template = 'faq/edit_faq.html'
     context = {
