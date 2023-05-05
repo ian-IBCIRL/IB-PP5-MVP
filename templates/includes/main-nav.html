@@ -1,46 +1,73 @@
 <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity">Cybersecurity</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Compliance">Compliance</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity,HR,Compliance">All Policies</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity,HR,Compliance">All
+                        Policies</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Incident%20Response">Incident Response</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Endpoint%20Protection">Endpoint Protection</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Incident%20Response">Incident
+                        Response</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Endpoint%20Protection">Endpoint
+                        Protection</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Other">Other</a></li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=Incident%20Response,Endpoint%20Protection,Other">All Cybersecurity</a></li>
+                        href="{% url 'products' %}?category=Incident%20Response,Endpoint%20Protection,Other">All
+                        Cybersecurity</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">HR</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                aria-expanded="false">HR</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Acceptable Use">AUP</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working">Remote Working</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working,HR,,Acceptable%20Use">All HR</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working">Remote Working</a>
+                </li>
+                <li><a class="dropdown-item"
+                        href="{% url 'products' %}?category=Remote%20Working,HR,,Acceptable%20Use">All HR</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Systems</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Systems</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Workstations">Workstations</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Servers">Servers</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=Networking">Networking</a>
                 </li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Systems Products</a></li>
+                        href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Systems
+                        Products</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Account</a>
             <ul class="dropdown-menu">
                 {% if user.is_authenticated %}
                 {% if user.is_superuser %}

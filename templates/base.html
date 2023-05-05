@@ -12,9 +12,31 @@
     {% endblock %}
 
     {% block extra_meta %}
+    <!-- Set up meta data for SOA lighthouse scoring -->
+    <meta name="author" content="IBCIRL.com">
+    <meta name="description" content="PP5 Django MVP for Cybersecurity from Killorglin, Kerry, Ireland">
+    <meta name="keywords" content="cybersecurity, policies, learning, templates, consulting, Killorglin, Kerry, Ireland">
+
+    <!-- added CSP for responsiveness testing sites rather than chrome addin workaround -->
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' *.google.com *.bing.com *.googleapis.com ui.dev techsini.com browserstack.com;
+    script-src  'self' 'nonce-{script value}' 'strict-dynamic' https: 'unsafe-eval' https://kit.fontawesome.com https://code.jquery.com https://cdn.jsdelivr.net blob:;
+    img-src 'self' *.amazonaws.com https://*.googleapis.com https://*.gstatic.com *.google.com *.googleusercontent.com data:;
+    connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com data: blob:;
+    font-src *.fontawesome.com https://fonts.gstatic.com https://fonts.googleapis.com;
+    style-src 'nonce-{style value}' 'self' https://fonts.googleapis.com https://stackpath.bootstrapcdn.com;
+    worker-src 'self' blob:;">
     {% endblock %}
 
+    <!-- Favicon -->
+    {% block favicon %}
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}">
+    {% endblock %}
+    
     {% block corecss %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
@@ -25,15 +47,18 @@
     {% endblock %}
 
     {% block corejs %}
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
     </script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b16a869446.js" crossorigin="anonymous"></script>
     <!--- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}

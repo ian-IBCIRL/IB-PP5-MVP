@@ -36,7 +36,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ib-pp5-polshop.herokuapp.com', 'localhost']
 
@@ -75,6 +75,17 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
 LOGIN_URL = '/accounts/login/'  # URL for logging in
 LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
+LOGOUT_REDIRECT_URL = '/'
+
+
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-info',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+    }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -105,7 +116,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-#                'bag.contexts.bag_contents',
+#                'order.contexts.order_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
