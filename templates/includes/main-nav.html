@@ -7,7 +7,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -18,7 +18,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity">Cybersecurity</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
@@ -28,7 +28,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=incidentresponse">Incident
                         Response</a></li>
@@ -41,8 +41,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                aria-expanded="false">HR</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">HR</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=acceptableuse">AUP</a></li>
@@ -53,7 +52,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Systems</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=workstations">Workstations</a></li>
@@ -66,7 +65,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown d-none d-lg-block">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Account</a>
             <ul class="dropdown-menu">
                 {% if user.is_authenticated %}
@@ -90,9 +89,6 @@
                     </i>
                 </div>
             </a>
-        </li>
-        <li class="nav-item shop-all-width">
-            <a class="nav-link shop-all-nav" href="{% url 'products' %}" role="button">ShopAll</a>
         </li>
     </ul>
     <form class="d-flex d-none d-lg-flex" role="search" method="GET" action="{% url 'products' %}">

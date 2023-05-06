@@ -21,11 +21,10 @@ from .views import handler404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('privacy/', include('privacy.urls')),
     path('faq/', include('faq.urls')),
     path('contact/', include('contact.urls')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
