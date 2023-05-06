@@ -20,23 +20,23 @@
         <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity">Cybersecurity</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Compliance">Compliance</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Cybersecurity,HR,Compliance">All
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity">Cybersecurity</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=compliance">Compliance</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity,humanresources,compliance">All
                         Policies</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Incident%20Response">Incident
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=incidentresponse">Incident
                         Response</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Endpoint%20Protection">Endpoint
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=endpointprotection">Endpoint
                         Protection</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Other">Other</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=other">Other</a></li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=Incident%20Response,Endpoint%20Protection,Other">All
+                        href="{% url 'products' %}?category=incidentresponse,endpointprotection,other">All
                         Cybersecurity</a></li>
             </ul>
         </li>
@@ -44,24 +44,24 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                 aria-expanded="false">HR</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=HR">HR</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Acceptable Use">AUP</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Remote%20Working">Remote Working</a>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=acceptableuse">AUP</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=remoteworking">Remote Working</a>
                 </li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=Remote%20Working,HR,,Acceptable%20Use">All HR</a></li>
+                        href="{% url 'products' %}?category=remoteworking,humanresources,,acceptableuse">All HR</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Systems</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Workstations">Workstations</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Servers">Servers</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=Networking">Networking</a>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=workstations">Workstations</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=servers">Servers</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=networking">Networking</a>
                 </li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=Cabinets,Appliances,Taps%20and%20Sinks,">All Systems
+                        href="{% url 'products' %}?category=workstations,servers,networking,">All Systems
                         Products</a></li>
             </ul>
         </li>
