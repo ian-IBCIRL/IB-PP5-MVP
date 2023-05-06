@@ -68,14 +68,6 @@ INSTALLED_APPS = [
     'storages'
 ]
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
-LOGIN_URL = '/accounts/login/'  # URL for logging in
-LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
-LOGOUT_REDIRECT_URL = '/'
 
 
 MESSAGE_TAGS = {
@@ -228,6 +220,7 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+DEVELOPMENT = True
 
 FREE_DELIVERY_THRESHOLD = 100
 STANDARD_DELIVERY_PERCENTAGE = 10
@@ -244,3 +237,12 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAILUSR')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAILPW')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAILUSR')
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
+LOGIN_URL = '/accounts/login/'  # URL for logging in
+LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
+LOGOUT_REDIRECT_URL = '/'
