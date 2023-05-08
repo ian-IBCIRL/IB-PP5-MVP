@@ -6,16 +6,18 @@
 <!-- hero image -->
 <div class="hero-image">
     <img class="img-fluid" src="{% static 'policy-shop-hero.jpg' %}" alt="Policy Shop Hero image">
+    <div class="hero-text">
+        <p class="text-center">
+            All your <strong>regulatory</strong> and <strong>cybersecurity</strong>
+            <strong>policy</strong> and <strong>questionnaire</strong> <strong>needs</strong> are here!
+        </p>
+    </div>
     <div class=" hero-button">
         <h4>
             <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3 px-5 shop-all">See all policies</a>
         </h4>
     </div>
-    <div class="hero-text">
-        <p class="text-center">
-		<strong>All</strong> your <strong>regulatory</strong> and <strong>cybersecurity</strong> <strong>policy</strong> and <strong>questionnaire</strong> <strong>needs</strong> are here!
-        </p>
-    </div>
+
 </div>
 
 <!-- Featured Products -->
@@ -23,56 +25,56 @@
     <h2 class="pb-3">Featured Products</h2>
     <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
         {% for product in featured_products %}
-            {% if product.featured %}
-            <div class="col mb-5 p-2 ">
-                <a class="text-decoration-none text-black" href="{% url 'product_detail' product.id %}">
-                    <div class="card h-100 product">
-                        <!-- Product image-->
-                        {% if product.image %}
-                        <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        {% else %}
-                        <a href="">
-                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}polshop.png"
-                                alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">{{ product.name }}</h5>
-                                <!-- Product price-->
-                                {% if product.discount_price %}
-                                <del><span class="mt-3">€{{ product.price }}</span> </del>
-                                <span class="badge bg-primary">Sale</span>
+        {% if product.featured %}
+        <div class="col mb-5 p-2 ">
+            <a class="text-decoration-none text-black" href="{% url 'product_detail' product.id %}">
+                <div class="card h-100 product">
+                    <!-- Product image-->
+                    {% if product.image %}
+                    <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% else %}
+                    <a href="">
+                        <img class="product-image card-img-top" src="{{ MEDIA_URL }}polshop.png"
+                            alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{ product.name }}</h5>
+                            <!-- Product price-->
+                            {% if product.discount_price %}
+                            <del><span class="mt-3">€{{ product.price }}</span> </del>
+                            <span class="badge bg-primary">Sale</span>
 
-                                <p class="mt-3">€{{ product.discount_price }} </p>
+                            <p class="mt-3">€{{ product.discount_price }} </p>
+                            {% else %}
+                            <p class="mt-3">€{{ product.price }}</p>
+                            {% endif %}
+                            <p>
+                                {% if product.rating %}
+                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                    5</small>
                                 {% else %}
-                                <p class="mt-3">€{{ product.price }}</p>
+                                <small class="text-muted">No Rating</small>
                                 {% endif %}
-                                <p>
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                        5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
-                                </p>
-                                {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal"
-                                        data-target="#id_{{ product.slug }}"
-                                        href="{% url 'delete_product' product.id %}">Delete</a>
-                                    {% include 'products/includes/delete_modal.html' %}
-                                </small>
-                                {% endif %}
-                            </div>
+                            </p>
+                            {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#id_{{ product.slug }}"
+                                    href="{% url 'delete_product' product.id %}">Delete</a>
+                                {% include 'products/includes/delete_modal.html' %}
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
-                </a>
-            </div>
-            {% endif %}
+                </div>
+            </a>
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -82,49 +84,53 @@
     <h2 class="pb-3">Recently Added</h2>
     <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
         {% for product in recently_added %}
-            <div class="col mb-5 p-2 ">
-                <a class="text-decoration-none text-black" href="{% url 'product_detail' product.id %}">
-                    <div class="card h-100 product">
-                        <!-- Product image-->
-                        {% if product.image %}
-                            <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
-                        {% else %}
-                        <a href="">
-                            <img class="product-image card-img-top" src="{{ MEDIA_URL }}polshop.png" alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">{{ product.name }}</h5>
-                                <!-- Product price-->
-                                {% if product.discount_price %}
-                                    <del><span class="mt-3">€{{ product.price }}</span> </del>
-                                    <span class="badge bg-primary">Sale</span>
-                                    <p class="mt-3">€{{ product.discount_price }} </p>
+        <div class="col mb-5 p-2 ">
+            <a class="text-decoration-none text-black" href="{% url 'product_detail' product.id %}">
+                <div class="card h-100 product">
+                    <!-- Product image-->
+                    {% if product.image %}
+                    <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    {% else %}
+                    <a href="">
+                        <img class="product-image card-img-top" src="{{ MEDIA_URL }}polshop.png"
+                            alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{ product.name }}</h5>
+                            <!-- Product price-->
+                            {% if product.discount_price %}
+                            <del><span class="mt-3">€{{ product.price }}</span> </del>
+                            <span class="badge bg-primary">Sale</span>
+                            <p class="mt-3">€{{ product.discount_price }} </p>
+                            {% else %}
+                            <p class="mt-3">€{{ product.price }}</p>
+                            {% endif %}
+                            <p>
+                                {% if product.rating %}
+                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                    5</small>
                                 {% else %}
-                                    <p class="mt-3">€{{ product.price }}</p>
+                                <small class="text-muted">No Rating</small>
                                 {% endif %}
-                                <p>
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
-                                </p>
-                                {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                    <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#id_{{ product.slug }}" href="{% url 'delete_product' product.id %}">Delete</a>
-                                    {% include 'products/includes/delete_modal.html' %}
-                                </small>
-                                {% endif %}
-                            </div>
+                            </p>
+                            {% if request.user.is_superuser %}
+                            <small class="ml-3">
+                                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                <a class="text-danger" type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#id_{{ product.slug }}"
+                                    href="{% url 'delete_product' product.id %}">Delete</a>
+                                {% include 'products/includes/delete_modal.html' %}
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
         {% endfor %}
     </div>
 </div>
@@ -133,24 +139,29 @@
     <div class="justify-content-center aligns-items-center">
         <div class="text-center">
             <h2 class="my-3">What our customers say</h2>
-            <div id="carouselExampleControls" class="carousel slide carousel-dark slide my-5 carousel-width" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide carousel-dark slide my-5 carousel-width"
+                data-bs-ride="carousel">
                 <div class="carousel-inner">
-                {% for comment in comments %}
-                    <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}" data-interval="100" data-bs-interval="2000">
-                        <img class="comment-image" src="{{ comment.product.image.url }}" alt="{{ comment.product.name }}">
+                    {% for comment in comments %}
+                    <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}" data-interval="100"
+                        data-bs-interval="2000">
+                        <img class="comment-image" src="{{ comment.product.image.url }}"
+                            alt="{{ comment.product.name }}">
                         <P>Reviewed by {{ comment.name }}</P>
                         <P> Product name: {{ comment.product.name }}</P>
                         <p class="overflow-auto comment-body">{{ comment.body }}</p>
                     </div>
-                {% endfor %}
+                    {% endfor %}
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
