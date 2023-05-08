@@ -6,18 +6,17 @@
 <!-- hero image -->
 <div class="hero-image">
     <img class="img-fluid" src="{% static 'policy-shop-hero.jpg' %}" alt="Policy Shop Hero image">
+    <div class=" hero-button">
+        <h4>
+            <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3 px-5 shop-all">See all policies</a>
+        </h4>
+    </div>
     <div class="hero-text">
         <p class="text-center">
             All your <strong>regulatory</strong> and <strong>cybersecurity</strong>
             <strong>policy</strong> and <strong>questionnaire</strong> <strong>needs</strong> are here!
         </p>
     </div>
-    <div class=" hero-button">
-        <h4>
-            <a href="{% url 'products' %}" class="btn btn-lg text-uppercase py-3 px-5 shop-all">See all policies</a>
-        </h4>
-    </div>
-
 </div>
 
 <!-- Featured Products -->
