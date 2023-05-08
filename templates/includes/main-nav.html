@@ -64,32 +64,6 @@
                         Products</a></li>
             </ul>
         </li>
-        <li class="nav-item dropdown d-none d-lg-block">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Account</a>
-            <ul class="dropdown-menu">
-                {% if user.is_authenticated %}
-                {% if user.is_superuser %}
-                <li><a class="dropdown-item" href="{% url 'add_product' %}">Product Management</a></li>
-                {% endif%}
-                <li><a class="dropdown-item" href="">My Profile</a></li>
-                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Sign Out</a></li>
-                {% else %}
-                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                <li><a class="dropdown-item" href="{% url 'account_login' %}">Sign In</a></li>
-                {% endif %}
-            </ul>
-        </li>
-        <li class="nav-item list-inline-item d-none d-lg-flex">
-            <a class="{% if grand_total %}text-info font-weighht-bold {% else %}text-black {% endif %} nav-link"
-                href="">
-                <div class="shopping-cart">
-                    <i class="fas fa-shopping-cart"><span
-                            class="shopping-cart-total">{% if grand_total %}€{{ grand_total | floatformat:2 }}{% else %}€0.00{% endif %}</span>
-                    </i>
-                </div>
-            </a>
-        </li>
     </ul>
 </div>
 

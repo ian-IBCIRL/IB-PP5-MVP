@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Product, Category, Comment
 
 
+@admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -16,6 +17,7 @@ class ProductAdmin(admin.ModelAdmin):
 ordering = ('sku',)
 
 
+@admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
@@ -23,5 +25,8 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Product, ProductAdmin)
-admin.site.register(Category, CategoryAdmin)
+class CommentAdmin(admin.ModelAdmin):
+    """
+    Comment management section for admin
+    """
+    list_display = ('name', 'body', 'product', 'created_on', 'approved')

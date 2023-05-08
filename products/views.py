@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Comment
+from .forms import ProductForm, CommentForm
 
 
 def all_products(request):
@@ -61,9 +61,25 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    comments = product.comments.filter(approved=True).order_by('-created_on')
+
+    if request.method == 'POST':
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+
+            new_comment = comment_form.save(commit=False)
+            new_comment.product = product
+            new_comment.save()
+
+            messages.info(request, 'Waiting to be approved!')
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        comment_form = CommentForm()
 
     context = {
         'product': product,
+        'comment_form': comment_form,
+        'comments': comments,
     }
 
     return render(request, 'products/product_detail.html', context)

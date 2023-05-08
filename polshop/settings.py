@@ -69,7 +69,6 @@ INSTALLED_APPS = [
 ]
 
 
-
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-info',
         messages.INFO: 'alert-info',
