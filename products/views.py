@@ -92,24 +92,28 @@ def add_product(request):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+    try:
+        if request.method == 'POST':
+            form = ProductForm(request.POST, request.FILES)
+            if form.is_valid():
+                product = form.save()
+                messages.success(request, 'Successfully added product!')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(request, 'Failed to add product. \
+                    Please ensure the form is valid.')
         else:
-            messages.error(request, 'Failed to add product. \
-                Please ensure the form is valid.')
-    else:
-        form = ProductForm()
+            form = ProductForm()
 
-    template = 'products/add_product.html'
-    context = {
-        'form': form,
-    }
+        template = 'products/add_product.html'
+        context = {
+            'form': form,
+        }
 
-    return render(request, template, context)
+        return render(request, template, context)
+    except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
+        return HttpResponse(status=500)
 
 
 @login_required
@@ -119,28 +123,33 @@ def edit_product(request, product_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=product)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+    try:
+        product = get_object_or_404(Product, pk=product_id)
+        if request.method == 'POST':
+            form = ProductForm(request.POST, request.FILES, instance=product)
+            if form.is_valid():
+                form.save()
+                messages.success(request, 'Successfully updated product!')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(request,
+                            'Failed to update product. \
+                                Please ensure the form is valid.')
         else:
-            messages.error(request,
-                           'Failed to update product. \
-                            Please ensure the form is valid.')
-    else:
-        form = ProductForm(instance=product)
-        messages.info(request, f'You are editing {product.name}')
+            form = ProductForm(instance=product)
+            messages.info(request, f'You are editing {product.name}')
 
-    template = 'products/edit_product.html'
-    context = {
-        'form': form,
-        'product': product,
-    }
+        template = 'products/edit_product.html'
+        context = {
+            'form': form,
+            'product': product,
+        }
 
-    return render(request, template, context)
+        return render(request, template, context)
+
+    except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
+        return HttpResponse(status=500)
 
 
 @login_required
