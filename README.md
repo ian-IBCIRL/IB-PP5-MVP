@@ -65,6 +65,10 @@ Agile here
 
 ## Testing
 
+### Known bugs
+During early testing, I ran into an AWS error with credentials where a new line was accidentally added to the end of the AWS codes.
+The issue is described and resolved here - https://github.com/boto/botocore/issues/2001
+
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
@@ -118,7 +122,7 @@ Here is the version history:
     - Bootstrap documentation https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
     
 -   ### Images
-    - Car images https://www.pexels.com/ 
+    - Product images https://www.pexels.com/ 
     - favicon.ico generation https://favicon.io/favicon-generator/
     - Colors from [Lilybug Design](https://www.lilybugdesign.co.nz/procreate-color-palettes)
 

@@ -233,6 +233,50 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+/* ------------------------FAQS */
+
+.faqs:hover {
+    color: #F99F38;
+    cursor: pointer;
+}
+
+/* ------------------------ Product Image size */
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/* ------------------------ Carosel/ Review/ comment section */
+
+.carousel-width {
+    /* margin: 0 100px 0 100px; */
+    max-width: 500px;
+    margin: auto;
+}
+
+.comment-body {
+    max-height: 200px;
+}
+
+/* -------------------------Subscribe form */
+
+#mc_embed_signup .button .foot {
+    /* border: 1px solid #ABB0B2; */
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 33px;
+    padding: 40px;
+}
+
+/* ------------------------ Privacy policy */
+
+.privacy-text {
+    text-align: justify;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
