@@ -191,6 +191,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 USE_AWS = True
 
+FREE_DELIVERY_THRESHOLD = 100
+STANDARD_DELIVERY_PERCENTAGE = 10
+
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
@@ -221,10 +224,6 @@ if 'USE_AWS' in os.environ:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEVELOPMENT = True
-
-FREE_DELIVERY_THRESHOLD = 100
-STANDARD_DELIVERY_PERCENTAGE = 10
-
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

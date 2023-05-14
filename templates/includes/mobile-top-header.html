@@ -3,14 +3,15 @@
         <i class="fa-solid fa-house fa-lg"></i>
     </a>
 </li>
-<li class="list-inline-item mobile-nav my-1">
+<li class="list-inline-item mobile-nav my-5">
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false" aria-label="Search">
         <div class="text-center w-100 mobile-menu">
             <div><i class="fas fa-search fa-lg"></i></div>
+            <p class="my-0">Search</p>
         </div>
     </a>
-    <div class="dropdown-menu p-3 my-2 search-bar-mobile" aria-labelledby="mobile-search">
+    <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" role="search" method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
                 <input class="form-control border me-2" type="text" name="q" placeholder="Search">
@@ -30,10 +31,10 @@
         aria-haspopup="true" aria-expanded="false" aria-label="my-account">
         <div class="text-center mobile-menu">
             <div><i class="fas fa-user fa-lg"></i></div>
-            <p class="my-0"></p>
+            <p class="my-0">My Account</p>
         </div>
     </a>
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu"  aria-labelledby="user-options">
         {% if user.is_authenticated %}
         {% if user.is_superuser %}
         <li><a class="dropdown-item" href="{% url 'add_product' %}">Product Management</a></li>

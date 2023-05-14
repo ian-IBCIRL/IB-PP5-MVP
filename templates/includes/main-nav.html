@@ -1,13 +1,13 @@
-<div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+<div class="collapse navbar-collapse w-100" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                 Home
-            </a>
+            </a> 
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-bs-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -18,7 +18,7 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Policies</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" data-toggle="dropdown" aria-expanded="false">Policies</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity">Cybersecurity</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
@@ -28,7 +28,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=incidentresponse">Incident
                         Response</a></li>
@@ -41,7 +41,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">HR</a>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-toggle="dropdown" aria-expanded="false">HR</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=acceptableuse">AUP</a></li>
@@ -52,7 +52,7 @@
             </ul>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-toggle="dropdown"
                 aria-expanded="false">Systems</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=workstations">Workstations</a></li>
