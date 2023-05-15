@@ -23,7 +23,7 @@
 
         <div class="row">
             <div class="col">
-<!--                {% if ordersheet_items %}-->
+                {% if ordersheet_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
@@ -110,7 +110,7 @@
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase">Order More!!</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
@@ -122,7 +122,7 @@
                             </tr>
                         </table>
                     </div>
- <!--               {% else %}
+                {% else %}
                     <p class="lead mb-5">Your ordersheet is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
@@ -130,7 +130,7 @@
                         </span>
                         <span class="text-uppercase">Order more !</span>
                     </a>
-                {% endif %}-->
+                {% endif %}
             </div>
         </div>
     </div>
