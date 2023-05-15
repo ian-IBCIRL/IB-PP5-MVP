@@ -20,7 +20,6 @@ class Contact(models.Model):
     email = models.EmailField(max_length=100)
     phone = models.CharField(max_length=20)
     message = models.TextField(max_length=1000)
-    location = models.CharField(max_length=100)
     date_created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
