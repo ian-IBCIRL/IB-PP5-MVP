@@ -74,7 +74,7 @@ def adjust_ordersheet(request, item_id):
             messages.success(request, f'Removed {product.name} from your ordersheet')
 
     request.session['ordersheet'] = ordersheet
-    return redirect(reverse('view_ordersheet'))
+    return redirect(reverse('ordersheet'))
 
 
 def remove_from_ordersheet(request, item_id):
