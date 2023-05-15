@@ -6,7 +6,7 @@ from products.models import Product
 # Create your views here.
 
 
-def view_ordersheet(request):
+def ordersheet(request):
     """ A view that renders the ordersheet contents page """
 
     return render(request, 'ordersheet/ordersheet.html')
