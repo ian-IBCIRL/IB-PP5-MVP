@@ -5,13 +5,13 @@ html {
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 154px);
+    height: calc(100vh - 164px);
 
     /* main page font colour */
     color: rgb(0, 0, 0);
 
-    padding-top: 150px;
-    font-family: 'Poppins', sans-serif;
+    padding-top: 130px;
+    font-family: 'Lato', sans-serif;
     /* Stick footer to the bottom of the page */
     min-height: 100vh;
     display: flex;
