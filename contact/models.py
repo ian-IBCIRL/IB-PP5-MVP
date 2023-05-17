@@ -42,8 +42,8 @@ class Address(models.Model):
     phone2 = models.CharField(max_length=58, blank=True, null=True)
     email = models.EmailField(max_length=100)
     email2 = models.EmailField(max_length=100, blank=True, null=True)
-    location = models.EmailField(max_length=100)
-    location2 = models.EmailField(max_length=100, blank=True, null=True)
+    location = models.CharField(max_length=100)
+    location2 = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):
         return self.address
