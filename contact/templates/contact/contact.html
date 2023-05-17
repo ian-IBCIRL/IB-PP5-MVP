@@ -13,7 +13,7 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row flex-column-reverse flex-md-row">
-        <div class="col col-12 col-md-6">
+        <div class="col col-12">
 
             <h4 class="mb-4 text-center my-3">Address</h4>
             <div class="container text-center mb-5">
@@ -38,7 +38,7 @@
            </div>
        
         <div class="col">
-            <h4 class="mb-4 text-center my-3">Contact us soon!</h4>
+            <h4 class="text-center">Contact us soon!</h4>
             <form method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}
