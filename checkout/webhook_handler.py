@@ -25,9 +25,9 @@ class StripeWH_Handler:
         print("trying to send email to", order.email)
         cust_email = order.email
         subject = "Hello World"
-#        subject = render_to_string(
-#            'checkout/confirmation_emails/confirmation_email_subject.txt',
-#             {'order': order})
+        subject = render_to_string(
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+             {'order': order})
         print("got subject", subject)
         body = "This is the message body"
 #        body = render_to_string(
