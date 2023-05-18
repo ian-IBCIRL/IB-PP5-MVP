@@ -12,6 +12,7 @@ import json
 import time
 import stripe
 
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
@@ -23,14 +24,16 @@ class StripeWH_Handler:
 
         print("trying to send email to", order.email)
         cust_email = order.email
-        subject = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_subject.txt',
-            {'order': order})
-        print ("got subject", subject)
-        body = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        print ("got body", body)
+        subject = "Hello World"
+#        subject = render_to_string(
+#            'checkout/confirmation_emails/confirmation_email_subject.txt',
+#             {'order': order})
+        print("got subject", subject)
+        body = "This is the message body"
+#        body = render_to_string(
+#            'checkout/confirmation_emails/confirmation_email_body.txt',
+#            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+        print("got body", body)
         send_mail(
             subject,
             body,
