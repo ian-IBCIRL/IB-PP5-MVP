@@ -60,7 +60,8 @@ class StripeWH_Handler:
         ordersheet = intent.metadata.ordersheet
         save_info = intent.metadata.save_info
 
-        print("got metadata")
+        print("got metadata - ordersheet is:", ordersheet)
+        print("intent.latest_charge is:", intent.latest_charge)
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
