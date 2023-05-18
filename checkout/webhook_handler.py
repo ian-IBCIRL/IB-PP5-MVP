@@ -66,6 +66,7 @@ class StripeWH_Handler:
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
         )
+        print("Got stripe charge")
         # After a Stripe update on November 16, 2022,
         # the charges attribute is no longer available
         # directly from the payment intent. To get the
