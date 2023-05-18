@@ -75,7 +75,9 @@ class StripeWH_Handler:
         # same for .amount
 
         billing_details = stripe_charge.billing_details  # noqa updated
+        print("Got details 1")
         shipping_details = intent.shipping
+        print("Got details 2")
         grand_total = round(stripe_charge.amount / 100, 2)  # updated
 
         print("Got details")
