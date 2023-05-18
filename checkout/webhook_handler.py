@@ -129,9 +129,11 @@ class StripeWH_Handler:
                 break
             except Order.DoesNotExist:
                 attempt += 1
+                print("Order Does Not Exist")
                 time.sleep(1)
         if order_exists:
             self._send_confirmation_email(order)
+            print("Order exists")
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',  # noqa
                 status=200)
@@ -179,6 +181,7 @@ class StripeWH_Handler:
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
         self._send_confirmation_email(order)
+        print("Sent Email")
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',  # noqa
             status=200)
