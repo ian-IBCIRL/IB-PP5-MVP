@@ -53,10 +53,14 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
+        print("handling succeeded")
+
         intent = event.data.object
         pid = intent.id
         ordersheet = intent.metadata.ordersheet
         save_info = intent.metadata.save_info
+
+        print("got metadata")
 
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
@@ -72,6 +76,8 @@ class StripeWH_Handler:
         billing_details = stripe_charge.billing_details  # noqa updated
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)  # updated
+
+        print("Got details")
 
         # clean data in shipping details
         for field, value in shipping_details.address.items():
@@ -99,6 +105,8 @@ class StripeWH_Handler:
         attempt = 1
         while attempt <= 5:
             try:
+
+                print("Trying to verify")
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
@@ -126,6 +134,7 @@ class StripeWH_Handler:
         else:
             order = None
             try:
+                print("trying to create")
                 order = Order.objects.create(
                     full_name=shipping_details.name,
                     user_profile=profile,
