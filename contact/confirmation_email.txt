@@ -1,0 +1,14 @@
+
+Hello {{ name }}!
+
+Thank you for sending your message. 
+A team member will be in touch as soon as possible.
+
+This is what we received from you.
+
+{{ original_message }}
+
+Please check our recent and featured products at https://ib-polshop-pp5.herokuapp.com/
+
+Many thanks,
+The Policy Shop team.

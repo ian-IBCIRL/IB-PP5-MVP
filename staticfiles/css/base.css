@@ -18,6 +18,19 @@ body {
     flex-direction: column;
 }
 
+#location-map {
+    width: 1000;
+    height: 400;
+    border: 2px;
+    margin: auto;
+ }
+ 
+ #location-iframe {
+    border: 1px;
+    scroll-behavior: unset;
+    margin: auto;
+ }
+
 
 /* from Bulma */
 .icon {
