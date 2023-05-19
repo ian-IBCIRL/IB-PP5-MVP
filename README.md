@@ -44,7 +44,7 @@ PolicyShop is a website built in Django using Python, JavaScript, CSS and HTML.
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-## Site Goals
+### Site Goals
 - Site owner aim
     - Site owner can effectively sell their policies and services.
     - Site owner add or update their available policies and services.
@@ -54,14 +54,14 @@ PolicyShop is a website built in Django using Python, JavaScript, CSS and HTML.
     - Have a great user experience.
     - Can purchase policies and services easily.
 
-## Web Marketing
+### Web Marketing
 The use of social media marketing is very important for bringing in customers and increasing visibility of the site. 
 The approved way to generate interest is an organic approach as the marketing budget will be small initially.
 
 Facebook marketing is often more important than any other platform, we are using it for this project. 
 An image of the Facebook site can be found [here](docs/screenshot/others/FB_page_1.png) and [here](docs/screenshot/others/FB_page_2.png).
 
-## Search Engine Optimization
+### Search Engine Optimization
 The meta keywords and description in base.html have been amended to the researched keywords. 
 On significant pages like the index and product pages, the site title has the name The Policy Shop and also has keywords.
 
