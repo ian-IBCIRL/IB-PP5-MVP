@@ -296,7 +296,7 @@ The site was also tested for responsiveness here https://www.browserstack.com/re
 
 > Responsive Examples of Live Site
 
-![Responsive Site examples](docs/screenshot/responsive.png)
+![Responsive Site examples](docs/testing/responsive.png)
 
  - The site is fully responsive across multiple screen sizes and devices. 
 
