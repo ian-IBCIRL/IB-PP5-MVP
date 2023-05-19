@@ -48,7 +48,7 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 
 > Responsive Examples of Live Site
 
-![Responsive Site examples](docs/screenshot/responsive.png)
+![Responsive Site examples](docs/testing/responsive.png)
 
  - The site is fully responsive across multiple screen sizes and devices. 
 
