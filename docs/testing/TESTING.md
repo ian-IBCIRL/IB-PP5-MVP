@@ -144,12 +144,12 @@ Details [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fib-polshop.s3.amaz
 
 ### JSHint Validation
 
-![w3 Jigsaw CSS checker](/docs/testing/jshintvalidation.png)
+![w3 Jigsaw CSS checker](/docs/testing/jshint.png)
 #### Result: Pass - No Errors - note about bootstrap expected.
 
 ### PyLint Validation
 
-![CodeInst Python checker](/docs/testing/pythonvalidation.png)
+![CodeInst Python checker](/docs/testing/pylint.png)
 #### Result: Pass - No Errors - and same across all files for pylint addin for Gitpod/VSCode.
 
 To return to the main README click [here](/README.md)
