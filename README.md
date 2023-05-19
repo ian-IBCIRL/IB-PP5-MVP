@@ -6,6 +6,10 @@ This is my Code Institute student PP5 final project PolicyShop readme for the pr
 
 Note: To open any links in this README in a new browser tab, press CTRL + Click or right click and open in new tab/window.
 
+The Policy Shop is an online store where clients can purchase a wide range of cybersecurity policies and expertise. 
+Stripe is used as the payment processor. 
+Use the test card number 4242 4242 4242 4242 with a future expiration date, a three-digit CVC, and a five-digit postal code to test the payment functionality.
+
 # PolicyShop
 
 ### By [Ian Bowell](https://www.instagram.com/skianianiam/)
@@ -40,7 +44,37 @@ PolicyShop is a website built in Django using Python, JavaScript, CSS and HTML.
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Features here
+## Site Goals
+- Site owner aim
+    - Site owner can effectively sell their policies and services.
+    - Site owner add or update their available policies and services.
+    - Site owner can highlight their policies and services in sale or featured products category.
+-  Site User Goals:
+    - Can easily find the policies and services.
+    - Have a great user experience.
+    - Can purchase policies and services easily.
+
+## Web Marketing
+The use of social media marketing is very important for bringing in customers and increasing visibility of the site. 
+The approved way to generate interest is an organic approach as the marketing budget will be small initially.
+
+Facebook marketing is often more important than any other platform, we are using it for this project. 
+An image of the Facebook site can be found [here](docs/screenshot/others/FB_page_1.png) and [here](docs/screenshot/others/FB_page_2.png).
+
+## Search Engine Optimization
+The meta keywords and description in base.html have been amended to the researched keywords. 
+On significant pages like the index and product pages, the site title has the name The Policy Shop and also has keywords.
+
+The homepage has also been designed with SEO in mind. 
+Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the major keywords, to improve search results. 
+
+For SEO purposes, we have also added a sitemap.xml and robots.txt file to the website's root directory for search engines to crawl the site. 
+
+A sitemap is a method of classifying a website, indicating the URLs and the information contained within each section.
+The URLs on your website that a search engine crawler is permitted to visit are specified in a robots.txt file.
+
+![](docs/screenshot/others/SEO-keywords.png)
+
 
 ## Future Enhancements
 
