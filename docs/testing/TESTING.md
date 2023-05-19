@@ -139,6 +139,7 @@ And I also tried width="auto" to improve responsiveness.
 ### CSS Validation
 
 ![w3 Jigsaw CSS checker](/docs/testing/cssvalidation.png)
+Details [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fib-polshop.s3.amazonaws.com%2Fstatic%2Fcss%2Fbase.css)
 #### Result: Pass - No Errors
 
 ### JSHint Validation
