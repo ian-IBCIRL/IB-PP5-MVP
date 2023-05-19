@@ -161,7 +161,7 @@
                     <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}" data-interval="100"
                         data-bs-interval="2000">
                         <img class="comment-image" src="{{ comment.product.image.url }}"
-                            alt="{{ comment.product.name }}" height="150px">
+                            alt="{{ comment.product.name }}" height="150">
                         <P>Reviewed by {{ comment.name }}</P>
                         <P> Product name: {{ comment.product.name }}</P>
                         <p class="overflow-auto comment-body">{{ comment.body }}</p>
