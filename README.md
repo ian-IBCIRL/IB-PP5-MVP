@@ -39,6 +39,21 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 
 PolicyShop is a website built in Django using Python, JavaScript, CSS and HTML. 
 
+
+![Screenshot of homepage](./docs/screenshot/homepage.png)
+
+[View the live website on Heroku](https://ib-pp5-polshop.herokuapp.com/)
+
+Note: To open any links in this README in a new browser tab, press CTRL + Click.
+
+> Responsive Examples of Live Site
+
+![Responsive Site examples](docs/screenshot/responsive.png)
+
+ - The site is fully responsive across multiple screen sizes and devices. 
+
+### **[Link to Responsive Testing Examples on UI.dev](https://ui.dev/amiresponsive?url=https://ib-pp5-polshop.herokuapp.com/)**
+
 ### Site Goals
 - Site owner aim
     - Site owner can effectively sell their policies and services.
