@@ -13,7 +13,7 @@ Home page: The home page provides the user with a clear understanding as to the 
 There is a clear call to action for the user to login or sign up at the top of the home page. 
 The welcome message is clearly visible to the user when they first see the site, using any device.
 
-![Home Page Screenshot](/docs/screenshots/homepage.png)
+![Home Page Screenshot](/docs/screenshot/homepage.png)
 
 ## Device responsiveness testing
 
@@ -21,7 +21,7 @@ Device responsivness: Each page of the site was tested on a range of relevant de
 
 See more details in Lighthouse testing results and attempts to improve image loading with Cloudinary.
 
-![Device Responsiveness Testing](/docs/screenshots/responsiveness.png)
+![Device Responsiveness Testing](/docs/screenshot/testing/responsive.png)
 
 
 ### Testing Phase
@@ -138,7 +138,7 @@ And I also tried width="auto" to improve responsiveness.
 
 ### CSS Validation
 
-![w3 Jigsaw CSS checker](/docs/testing/cssvalidation.png)
+![w3 Jigsaw CSS checker](/docs/testing/CSSvalidation.png)
 Details [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fib-polshop.s3.amazonaws.com%2Fstatic%2Fcss%2Fbase.css)
 #### Result: Pass - No Errors
 
