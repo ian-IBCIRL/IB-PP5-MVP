@@ -128,10 +128,10 @@ And I also tried width="auto" to improve responsiveness.
 
 ### index.html
 
-![W3 Validation checker](/docs/testing/w3validation.png)
+![W3 Validation checker](/docs/testing/HTMLValidation.png)
 #### Result: No Errors
 
-### post detail html
+### Product detail html
 
 ![W3 Validation checker](/docs/testing/w3validation-detail.png)
 #### Result: No Errors
