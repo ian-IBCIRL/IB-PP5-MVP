@@ -26,7 +26,7 @@ def contact(request):
             name = form.cleaned_data['name']
             original_message = form.cleaned_data['message']
             message = render_to_string(
-                'contact/confirmation_email/confirmation_email.txt', {
+                'confirmation_email.txt', {
                     'name': name,
                     'original_message': original_message
                 })
