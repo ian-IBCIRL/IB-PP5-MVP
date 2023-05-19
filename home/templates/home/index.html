@@ -32,10 +32,10 @@
                     {% if product.image %}
                     <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                     {% else %}
-                    <a href="">
+
                         <img class="product-image card-img-top" src="{{ MEDIA_URL }}noimage.png"
                             alt="{{ product.name }}">
-                    </a>
+                </a>
                     {% endif %}
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-            </a>
+
         </div>
         {% endif %}
         {% endfor %}
@@ -113,6 +113,7 @@
                     <p class="mt-3">€{{ product.discount_price }} </p>
                     {% else %}
                     <p class="mt-3">€{{ product.price }}</p>
+                    </a>
                     {% endif %}
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
