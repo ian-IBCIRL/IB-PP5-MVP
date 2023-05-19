@@ -296,7 +296,7 @@ The site was also tested for responsiveness here https://www.browserstack.com/re
 
 > Responsive Examples of Live Site
 
-![Responsive Site examples](docs/screenshots/responsive.png)
+![Responsive Site examples](docs/screenshot/responsive.png)
 
  - The site is fully responsive across multiple screen sizes and devices. 
 
@@ -448,11 +448,14 @@ To set up a app/database admin we need `python3 manage.py createsuperuser`
 ### add an admin user
 To set up a app/database admin we need `python3 manage.py createsuperuser`
 
+### enable email and allauth
 in settings.py add EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 add ACCOUNT_ and LOGIN_ settings too.
 
 use `cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* templates/allauth` to copy the baseline allauth html etc to allow modification with prioritised files
+
+### using base.html
 
 The base.html for the site can be obtained from https://getbootstrap.com/
 and the version for this from https://getbootstrap.com/docs/4.6/getting-started/introduction/ with changes to replace the slim version with the full popper version.
