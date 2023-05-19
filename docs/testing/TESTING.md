@@ -119,7 +119,7 @@ And I also tried width="auto" to improve responsiveness.
 
 ![Google Lighthouse Index](/docs/testing/main-page-lighthouse.png)
 
-> post_detail.html
+> Product Detail Page
 
 ![Google Lighthouse Profile](/docs/testing/detail-page-lighthouse.png)
 
@@ -133,7 +133,7 @@ And I also tried width="auto" to improve responsiveness.
 
 ### Product detail html
 
-![W3 Validation checker](/docs/testing/w3validation-detail.png)
+![W3 Validation checker](/docs/testing/HTMLValidationDetail.png)
 #### Result: No Errors
 
 ### CSS Validation

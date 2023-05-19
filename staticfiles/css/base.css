@@ -6,9 +6,18 @@ body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+
+    /* main page font colour */
+    color: rgb(0, 0, 0);
+
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    /* Stick footer to the bottom of the page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* from Bulma */
 .icon {
@@ -83,6 +92,19 @@ body {
 	z-index: -1;
 }
 
+#location-map {
+    width: 60%;
+    height: 100%;
+ }
+ 
+ #location-iframe {
+    width: 70%;
+    height: 70%;
+    border: none;
+    scroll-behavior: unset;
+    margin: 0;
+ }
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -104,6 +126,57 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+
+/* -------------- hero image */
+
+.hero-image {
+    position: relative;
+    margin-top: -80px;
+
+}
+
+.hero-image img {
+    height: auto;
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* opacity for image not text */
+.hero-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+.hero-button {
+    width: inherit;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(7, 7, 7);
+}
+
+.hero-text {
+    width: 90%;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.shop-all {
+    background-color: rgba(17, 235, 53, 0.5);
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -173,6 +246,50 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+
+/* ------------------------FAQS */
+
+.faqs:hover {
+    color: #F99F38;
+    cursor: pointer;
+}
+
+/* ------------------------ Product Image size */
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/* ------------------------ Carosel/ Review/ comment section */
+
+.carousel-width {
+    /* margin: 0 100px 0 100px; */
+    max-width: 500px;
+    margin: auto;
+}
+
+.comment-body {
+    max-height: 200px;
+}
+
+/* -------------------------Subscribe form */
+
+#mc_embed_signup .button .foot {
+    /* border: 1px solid #ABB0B2; */
+    border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 33px;
+    padding: 40px;
+}
+
+/* ------------------------ Privacy policy */
+
+.privacy-text {
+    text-align: justify;
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -267,7 +384,7 @@ input[name='q']::placeholder {
 
 /* ------------------------ Media Queries */
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar  only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;

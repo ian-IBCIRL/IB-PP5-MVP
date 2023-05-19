@@ -91,6 +91,19 @@ body {
 	z-index: -1;
 }
 
+#location-map {
+    width: 1000;
+    height: 400;
+    border: 2px;
+    margin: auto;
+ }
+ 
+ #location-iframe {
+    border: 1px;
+    scroll-behavior: unset;
+    margin: auto;
+ }
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
