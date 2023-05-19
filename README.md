@@ -285,13 +285,13 @@ The site was also tested for responsiveness here https://www.browserstack.com/re
 
  - The site is fully responsive across multiple screen sizes and devices. 
 
- - I had to carry out significant security research, updates and testing to get this test to work.
- - Most people simply removed x-frame checks with a Chrome addin. 
- - I did not think this a full solution so I implemented the following line in base.html
+ I had to carry out significant security research, updates and testing to get this test to work.
+ Most people simply removed x-frame checks with a Chrome addin. 
+ I did not think this a full solution so I implemented the following line in base.html
 
- - `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
- - are allowed to embed my site in theirs, with success above. 
- - This is a more informative and professionally production ready approach.
+ `<meta http-equiv="Content-Security-Policy"...` , listing the sites that
+ are allowed to embed my site in theirs, with success above. 
+ This is a more informative and professionally production ready approach.
  - HOWEVER, the drawback is that the more advanced functionality of exernal maps, bootstrap and Stripe all need to be included.
  - So I reverted to removing the x-frame checks at this time.
 
