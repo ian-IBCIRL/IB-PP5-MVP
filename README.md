@@ -64,13 +64,18 @@ Technologies used here
 Agile here
 
 ## Testing
-
-### Known bugs
-During early testing, I ran into an AWS error with credentials where a new line was accidentally added to the end of the AWS codes.
-The issue is described and resolved here - https://github.com/boto/botocore/issues/2001
-
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
+
+### Known bugs
+
+1) During early testing, I ran into an AWS error with credentials where a new line was accidentally added to the end of the AWS codes.
+   The issue is described and resolved here - https://github.com/boto/botocore/issues/2001
+
+2) During later testing of the checkout process, emails were not being sent, due to the render_to_string failing to find the templates.
+   A similar issue is described here - https://stackoverflow.com/questions/67066334/django-cant-find-my-template-directory-even-though-its-configured-in-settings
+   In the end, I resolved it by removing the path element from the template filename, and adding the directory to templates listed in settings.py
+   I put in place lots of console logging which I have since removed, but it was nice to see the flow of checkout in the logs.
 
 Testing here
 
