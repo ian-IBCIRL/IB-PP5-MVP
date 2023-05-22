@@ -160,8 +160,14 @@
                     {% for comment in comments %}
                     <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}" data-interval="100"
                         data-bs-interval="2000">
+                        <!-- Product image-->
+                        {% if comment.product.image %}
                         <img class="comment-image" src="{{ comment.product.image.url }}"
                             alt="{{ comment.product.name }}" height="150">
+                        {% else %}
+                        <img class="comment-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}"
+                            height="150">
+                        {% endif %}
                         <P>Reviewed by {{ comment.name }}</P>
                         <P> Product name: {{ comment.product.name }}</P>
                         <p class="overflow-auto comment-body">{{ comment.body }}</p>
