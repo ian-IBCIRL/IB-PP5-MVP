@@ -28,19 +28,22 @@
 
                 {% endfor %}
             </div>
-            <div  style="margin:auto; align-content: center; width: 90vw; height: 90vh;" class="d-flex align-items-center  justify-content-center" >
-                <iframe width=900 height="750" style="margin:auto; align-content: center; width: 80vw; height:80vh; position: relative;" 
+            <div style="margin:auto; align-content: center; width: 90vw; height: 90vh;"
+                class="d-flex align-items-center  justify-content-center">
+                <iframe width=900 class="d-flex align-items-center  justify-content-center" height="750"
+                    style="margin:auto; align-content: center; width: 80vw; height:80vh; position: relative;"
                     src="https://www.bing.com/maps/embed?h=700&w=1800&cp=52.10527737981039~-9.785111613210802&lvl=14.095619338788428&typ=d&sty=h&src=SHELL&FORM=MBEDV8">
                 </iframe>
-                <div style="text-align: left; width: 500px; padding: 20px;">
-                    <a id="largeMapLink" target="_blank"
-                        href="https://www.bing.com/maps?cp=52.10527737981039~-9.785111613210802&amp;sty=h&amp;lvl=14.095619338788428&amp;FORM=MBEDLD">View
-                        Larger Map</a> &nbsp; | &nbsp;
-                    <a id="dirMapLink" target="_blank"
-                        href="https://www.bing.com/maps/directions?cp=52.10527737981039~-9.785111613210802&amp;sty=h&amp;lvl=14.095619338788428&amp;rtp=~pos.52.10527737981039_-9.785111613210802____&amp;FORM=MBEDLD">Get
-                        Directions</a>
-                </div>
             </div>
+            <div style="text-align: left; width: 500px; padding: 20px;">
+                <a id="largeMapLink" target="_blank"
+                    href="https://www.bing.com/maps?cp=52.10527737981039~-9.785111613210802&amp;sty=h&amp;lvl=14.095619338788428&amp;FORM=MBEDLD">View
+                    Larger Map</a> &nbsp; | &nbsp;
+                <a id="dirMapLink" target="_blank"
+                    href="https://www.bing.com/maps/directions?cp=52.10527737981039~-9.785111613210802&amp;sty=h&amp;lvl=14.095619338788428&amp;rtp=~pos.52.10527737981039_-9.785111613210802____&amp;FORM=MBEDLD">Get
+                    Directions</a>
+            </div>
+
 
             <div class="col">
                 <h4 class="text-center">Contact us soon!</h4>
@@ -53,4 +56,4 @@
         </div>
     </div>
 </div>
-    {% endblock %}
+{% endblock %}
