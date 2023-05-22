@@ -41,7 +41,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ib-pp5-polshop.herokuapp.com', 'localhost', '8000-ianibcirl-ibpp5mvp-zetl4nvtfpd.ws-eu97.gitpod.io']  # noqa
 
