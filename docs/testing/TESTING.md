@@ -108,18 +108,21 @@ To return to the main README click [here](/README.md)
 
 ### Desktop
 
-> index.html
+- index.html
+
 The lighthouse results do vary depending on Internet contention and time of day, affecting the load times for linked resources such as bootstrap, fonts, css and js.
-
+The necessary bootstrap modules, particularly for Popper dropdown menus and Stripe functionality do add siginificant load, but are essential.
+Even with preload statements they still take time to load, so the Lighthouse performance stat is as good as it can be at this time.
 I did also try using Cloudinary responsive image features, but found it added further load.
+So I managed to get good results by using WEBP file type for images, especially now that Apple IoS supports webp.
 
-Details are [Here](https://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design) 
+Details I found for the Cloudinary options are [Here](https://cloudinary.com/blog/how_to_automatically_create_images_for_responsive_design) 
 
-And I also tried width="auto" to improve responsiveness.
+And I also tried width="auto" to improve responsiveness. 
 
 ![Google Lighthouse Index](/docs/testing/main-page-lighthouse.png)
 
-> Product Detail Page
+- Product Detail Page
 
 ![Google Lighthouse Profile](/docs/testing/detail-page-lighthouse.png)
 
