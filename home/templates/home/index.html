@@ -41,7 +41,7 @@
                     {% else %}
                     <img class="product-image card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
-                </div>
+
             </a>
 
             <!-- Product details-->
@@ -84,10 +84,11 @@
                 </div>
             </div>
         </div>
-        {% endif %}
-        {% endfor %}
-
     </div>
+    {% endif %}
+    {% endfor %}
+
+</div>
 </div>
 
 <!-- Recently added products -->
@@ -104,7 +105,7 @@
                     {% else %}
                     <img class="product-image card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
-                </div>
+                
             </a>
 
             <!-- Product details-->
@@ -145,6 +146,7 @@
                     {% endif %}
                 </div>
             </div>
+        </div>
         </div>
         {% endfor %}
     </div>
