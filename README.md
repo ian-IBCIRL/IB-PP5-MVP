@@ -69,6 +69,7 @@ The use of social media marketing is very important for bringing in customers an
 The approved way to generate interest is an organic approach as the marketing budget will be small initially.
 
 Facebook marketing is often more important than any other platform, we are using it for this project. 
+
 An image of the Facebook site can be found [here](docs/screenshot/others/FB_page_1.png) and [here](docs/screenshot/others/FB_page_2.png).
 
 ### Search Engine Optimization
