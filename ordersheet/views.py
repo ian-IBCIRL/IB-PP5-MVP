@@ -27,20 +27,20 @@ def add_to_ordersheet(request, item_id):
         if item_id in list(ordersheet.keys()):
             if size in ordersheet[item_id]['items_by_size'].keys():
                 ordersheet[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {ordersheet[item_id]["items_by_size"][size]}')
+                messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {ordersheet[item_id]["items_by_size"][size]}')   # noqa
             else:
                 ordersheet[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'Added size {size.upper()} {product.name} to your ordersheet')
+                messages.success(request, f'Added size {size.upper()} {product.name} to your ordersheet')   # noqa
         else:
             ordersheet[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'Added size {size.upper()} {product.name} to your ordersheet')
+            messages.success(request, f'Added size {size.upper()} {product.name} to your ordersheet')   # noqa
     else:
         if item_id in list(ordersheet.keys()):
             ordersheet[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {ordersheet[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {ordersheet[item_id]}')   # noqa
         else:
             ordersheet[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your ordersheet')
+            messages.success(request, f'Added {product.name} to your ordersheet')   # noqa
 
     request.session['ordersheet'] = ordersheet
     return redirect(redirect_url)
@@ -59,19 +59,19 @@ def adjust_ordersheet(request, item_id):
     if size:
         if quantity > 0:
             ordersheet[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {ordersheet[item_id]["items_by_size"][size]}')
+            messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {ordersheet[item_id]["items_by_size"][size]}')   # noqa
         else:
             del ordersheet[item_id]['items_by_size'][size]
             if not ordersheet[item_id]['items_by_size']:
                 ordersheet.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your ordersheet')
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your ordersheet')   # noqa
     else:
         if quantity > 0:
             ordersheet[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {ordersheet[item_id]}')
+            messages.success(request, f'Updated {product.name} quantity to {ordersheet[item_id]}')   # noqa
         else:
             ordersheet.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your ordersheet')
+            messages.success(request, f'Removed {product.name} from your ordersheet')   # noqa
 
     request.session['ordersheet'] = ordersheet
     return redirect(reverse('ordersheet'))
@@ -91,10 +91,10 @@ def remove_from_ordersheet(request, item_id):
             del ordersheet[item_id]['items_by_size'][size]
             if not ordersheet[item_id]['items_by_size']:
                 ordersheet.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your ordersheet')
+            messages.success(request, f'Removed size {size.upper()} {product.name} from your ordersheet')   # noqa
         else:
             ordersheet.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your ordersheet')
+            messages.success(request, f'Removed {product.name} from your ordersheet')  # noqa
 
         request.session['ordersheet'] = ordersheet
         return HttpResponse(status=200)

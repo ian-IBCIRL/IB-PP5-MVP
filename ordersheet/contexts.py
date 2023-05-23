@@ -39,9 +39,9 @@ def ordersheet_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-    
+
     grand_total = delivery + total
-    
+
     context = {
         'ordersheet_items': ordersheet_items,
         'total': total,

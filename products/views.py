@@ -40,10 +40,10 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search criteria!")  # noqa
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query)  # noqa
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -72,7 +72,7 @@ def product_detail(request, product_id):
             new_comment.product = product
             new_comment.save()
 
-            messages.info(request, 'Waiting to be approved!')
+            messages.info(request, 'Comment added! Thank you.')
             return redirect(reverse('product_detail', args=[product.id]))
     else:
         comment_form = CommentForm()

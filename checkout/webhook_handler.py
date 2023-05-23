@@ -173,7 +173,7 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items():   # noqa
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
