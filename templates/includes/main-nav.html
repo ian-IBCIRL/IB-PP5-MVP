@@ -16,29 +16,33 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" data-toggle="dropdown" aria-expanded="false">Policies</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity">Cybersecurity</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources1">HR1</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=essentials">Essentials</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=email">Email</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=compliance">Compliance</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity,humanresources,compliance">All
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=cybersecurity,email,compliance">All
                         Policies</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Cybersecurity</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=incidentresponse">Incident
-                        Response</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=endpointprotection">Endpoint
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=incidentmanagement">Incident
+                        Management</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=endpoint">Endpoint
                         Protection</a></li>
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=other">Other</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=ransomware">Ransomware</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=other">Other</a></li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=incidentresponse,endpointprotection,other">All
+                        href="{% url 'products' %}?category=incidentmanagement,endpoint,ransomware,other">All
                         Cybersecurity</a></li>
             </ul>
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" role="button" data-toggle="dropdown" aria-expanded="false">HR</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources2">HR2</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=humanresources">HR</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=acceptableuse">AUP</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=remoteworking">Remote Working</a>
                 </li>
@@ -53,9 +57,10 @@
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=workstations">Workstations</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=servers">Servers</a></li>
                 <li><a class="dropdown-item" href="{% url 'products' %}?category=network">Networking</a>
-                </li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=ransomware">Ransomware</a>
+                    </li>
                 <li><a class="dropdown-item"
-                        href="{% url 'products' %}?category=workstations,servers,network">All Systems
+                        href="{% url 'products' %}?category=workstations,servers,network,ransomware">All Systems
                         Products</a></li>
             </ul>
         </li>
