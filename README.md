@@ -281,7 +281,65 @@ Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 d
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Agile here
+To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) click [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc)
+
+This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/5) to track and manage the [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) such as expected epics, user stories, milestones and other work and sprints involved.
+The purpose of Agile Development is to plan and measure progress for expected work and tasks, by listing the epics and then break them down into user stories or smaller tasks to ultimately finish the site in the allocated time.
+
+To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/5).
+To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) click [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc)
+
+At the initial stages I decided on core requirements ('must have' issues) for the project and some 'could have' issues but not critical requirements.
+
+From these I added the associated Epics, user stories, acceptance criteria and the tasks so I can track my work effectively.
+I did also use [milestones](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestones) as another way to visualise Epic completion status.
+
+Once I completed a task I note the item as completed and if all parts of this story were completed I would move it from **In Progress** to **Done** on the Kanban board. Acceptance criteria would also be noted where appropriate.
+
+At the end of a coding session I would update the user stories with a comment of:
+
+ - What was done
+ - What is left to be done
+ - Reminders to track where I finished so subsequent work would follow.
+
+#### Epics
+
+##### Completed Epics
+
+1. [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/1)
+2. [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/3)
+3. [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/15)
+4. [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/16)
+5. [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/17)
+6. [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/22)
+
+#### User stories
+
+#####  Completed User Stories
+
+To view details of the user stories please click on a user story below.
+See the project page for the full [list of issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue) to see the details and comments.
+See the Kanban page [here](https://github.com/users/ian-IBCIRL/projects/4/views/1)
+
+ 1. [USER STORY: Deploy Website](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
+ 2. [USER STORY: View Post List](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/4)
+ 3. [USER STORY: Open a Post](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/5)
+ 4. [USER STORY: Account Registration](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/8)
+ 5. [USER STORY: Comment on a Post](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
+ 6. [USER STORY: Edit My Posts Only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/19)
+ 7. [USER STORY: Like / Unlike posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/10)
+ 8. [USER STORY: Delete Posts (CRUD)](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
+ 9. [USER STORY: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/23)
+
+The following User stories were not completed as they are possible future features:
+
+ ##### Future Feature User stories
+ 
+ 1. [USER STORY: Consulting Service Bookings](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/24)
+ 2. [USER STORY: Social Login](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/14)
+ 
+I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
+
 
 ## Testing
 * [Back to table of contents](#table-of-contents) 
