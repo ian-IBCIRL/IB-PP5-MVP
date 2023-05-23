@@ -1,0 +1,393 @@
+[
+ {
+   "model": "products.product",
+   "pk": 101,
+   "fields": {
+      "name": "Information Security Policy",
+      "category": 1,
+      "sku": "pp5001340155a",
+      "slug": "pp5001340155a",
+      "description": "Information Security Policy",
+      "price": 53.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.6,
+      "image": "pexels-camila-bou-9172421.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 102,
+   "fields": {
+      "name": "Data Protection Policy",
+      "category": 2,
+      "sku": "pp5001600425a",
+      "slug": "pp5001600425a",
+      "description": "Data Protection Policy2",
+      "price": 58.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.6,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 103,
+   "fields": {
+      "name": "Data Retention Policy",
+      "category": 12,
+      "sku": "pp5001730010a",
+      "slug": "pp5001730010a",
+      "description": "Data Retention Policy",
+      "price": 205.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.7,
+      "image": "homepage_background_cropped_xrjrea_l6h0wo.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 104,
+   "fields": {
+      "name": "Access Control Policy",
+      "category": 12,
+      "sku": "pp5001890157a",
+      "slug": "pp5001890157a",
+      "description": "Access Control Policy",
+      "price": 169.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 3,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 105,
+   "fields": {
+      "name": "Asset Management Policy",
+      "category": 19,
+      "sku": "pp5002111605a",
+      "slug": "pp5002111605a",
+      "description": "Asset Management Policy",
+      "price": 232.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 5,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 106,
+   "fields": {
+      "name": "Risk Management Policy",
+      "category": 8,
+      "sku": "pp5002260206a",
+      "slug": "pp5002260206a",
+      "description": "Risk Management Policy",
+      "price": 30.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.7,
+      "image": "homepage_background_cropped_xrjrea_l6h0wo.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 107,
+   "fields": {
+      "name": "Information Classification and Handling Policy",
+      "category": 7,
+      "sku": "pp5002440521a",
+      "slug": "pp5002440521a",
+      "description": "Information Classification and Handling Policy",
+      "price": 59,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.4,
+      "image": "pexels-photo-1714208.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 108,
+   "fields": {
+      "name": "Information Security Awareness and Training Policy",
+      "category": 8,
+      "sku": "pp5002601115a",
+      "slug": "pp5002601115a",
+      "description": "Information Security Awareness and Training Policy",
+      "price": 36.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.5,
+      "image": "pexels-camila-bou-9172421.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 109,
+   "fields": {
+      "name": "Acceptable Use Policy",
+      "category": 17,
+      "sku": "pp5002690715a",
+      "slug": "pp5002690715a",
+      "description": "Acceptable Use Policy",
+      "price": 169.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.7,
+      "image": "pexels-photo-1714208.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 110,
+   "fields": {
+      "name": "Clear Desk and Clear Screen Policy",
+      "category": 3,
+      "sku": "pp5002701115a",
+      "slug": "pp5002701115a",
+      "description": "Clear Desk and Clear Screen Policy",
+      "price": 33.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.4,
+      "image": "pexels-camila-bou-9172421.webp",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 111,
+   "fields": {
+      "name": "Remote Working Policy",
+      "category": 16,
+      "sku": "pp5002761055a",
+      "slug": "pp5002761055a",
+      "description": "Remote Working Policy",
+      "price": 29.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 3,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 112,
+   "fields": {
+      "name": "Business Continuity Policy",
+      "category": 11,
+      "sku": "pp5002820069a",
+      "slug": "pp5002820069a",
+      "description": "Business Continuity Policy",
+      "price": 19.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.6,
+      "image": "pexels-photo-2881229.webp",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 113,
+   "fields": {
+      "name": "Backup Policy",
+      "category": 4,
+      "sku": "pp5002820147a",
+      "slug": "pp5002820147a",
+      "description": "Backup Policy",
+      "price": 20,
+      "discount": null,
+      "image_url": false,
+      "rating": 3.2,
+      "image": "pexels-camila-bou-9172421.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 114,
+   "fields": {
+      "name": "Malware and Antivirus Policy",
+      "category": 5,
+      "sku": "pp5002910572a",
+      "slug": "pp5002910572a",
+      "description": "Malware and Antivirus Policy",
+      "price": 26.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.7,
+      "image": "pexels-photo-2881229.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 115,
+   "fields": {
+      "name": "Change Management Policy",
+      "category": 6,
+      "sku": "pp5002990740a",
+      "slug": "pp5002990740a",
+      "description": "Change Management Policy",
+      "price": 48.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.8,
+      "image": "pexels-photo-1779487.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 116,
+   "fields": {
+      "name": "Third Party Supplier Security Policy",
+      "category": 18,
+      "sku": "pp5003050248a",
+      "slug": "pp5003050248a",
+      "description": "Third Party Supplier Security Policy",
+      "price": 65.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.4,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 117,
+   "fields": {
+      "name": "Continual Improvement Policy",
+      "category": 8,
+      "sku": "pp5003070787a",
+      "slug": "pp5003070787a",
+      "description": "Continual Improvement Policy",
+      "price": 33.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.4,
+      "image": "Capture.PNG",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 118,
+   "fields": {
+      "name": "Logging and Monitoring Policy",
+      "category": 9,
+      "sku": "pp5003090182a",
+      "slug": "pp5003090182a",
+      "description": "Logging and Monitoring Policy",
+      "price": 59.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 4.8,
+      "image": "homepage_background_cropped_xrjrea_l6h0wo.webp",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 119,
+   "fields": {
+      "name": "Network Security Management Policy",
+      "category": 15,
+      "sku": "pp5003090186a",
+      "slug": "pp5003090186a",
+      "description": "Network Security Management Policy",
+      "price": 60.99,
+      "discount": null,
+      "image_url": false,
+      "rating": 5,
+      "image": "NetworkCapture.webp",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 120,
+   "fields": {
+      "name": "One Hour Consulting Services",
+      "category": 1,
+      "sku": "1hrcons",
+      "slug": "OneHourConsultingServices",
+      "description": "One Hour Consulting Services",
+      "price": 100,
+      "discount": 80,
+      "image_url": false,
+      "rating": 5,
+      "image": "policy-shop-hero.webp",
+      "featured": false
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 121,
+   "fields": {
+      "name": "One Day Consulting Services",
+      "category": 20,
+      "sku": "OneDayConsultingServices",
+      "slug": "OneDayConsultingServices",
+      "description": "One Day of Consulting Services",
+      "price": 800,
+      "discount": 700,
+      "image_url": false,
+      "rating": 5,
+      "image": "serversCapture.webp",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 122,
+   "fields": {
+      "name": "Ransomware Incident Response Policy",
+      "category": 14,
+      "sku": "RW124",
+      "slug": "RansomwareIncidentResponsePolicy",
+      "description": "Ransomware Incident Response Policy",
+      "price": 400,
+      "discount": 200,
+      "image_url": false,
+      "rating": 4,
+      "image": "Capture.PNG",
+      "featured": true
+   }
+},
+ {
+   "model": "products.product",
+   "pk": 123,
+   "fields": {
+      "name": "Incident Response Policy",
+      "category": 13,
+      "sku": "rest3wwnetasd",
+      "slug": "123IncidentResponsePolicy",
+      "description": "Incident Response Policy",
+      "price": 200,
+      "discount": 200,
+      "image_url": false,
+      "rating": 5,
+      "image": "pexels-camila-bou-9172421.webp",
+      "featured": false
+   }
+}
+]
