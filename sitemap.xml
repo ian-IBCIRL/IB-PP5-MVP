@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/ordersheet/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?sort=rating&amp;direction=asc</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=cybersecurity</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=humanresources1</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=compliance</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=cybersecurity,humanresources,compliance</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=incidentresponse</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=endpointprotection</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=other</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=incidentresponse,endpointprotection,other</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=humanresources2</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=acceptableuse</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=remoteworking</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=remoteworking,humanresources,acceptableuse</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=workstations</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=servers</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=network</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=workstations,servers,network</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/121/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/118/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=logs</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/112/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=humanresources</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/120/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/119/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=employment</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/117/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/116/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=email</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/115/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=endpoint</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/114/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=essentials</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/privacy/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/contact/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/faq/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/113/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/111/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/106/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/110/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/108/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/101/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/102/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/107/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/109/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/104/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/103/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://ib-pp5-polshop.herokuapp.com/products/105/</loc>
+  <lastmod>2023-05-23T10:47:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
