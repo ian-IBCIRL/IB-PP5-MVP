@@ -283,7 +283,7 @@ Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 d
 
 To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) click [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc)
 
-This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/4) to track and manage the [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) such as expected epics, user stories, milestones and other work and sprints involved.
+This project was started with my GitHub Projects [Page](https://github.com/users/ian-IBCIRL/projects/5) to track and manage the [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue+sort%3Acreated-asc) such as expected epics, user stories, milestones and other work and sprints involved.
 The purpose of Agile Development is to plan and measure progress for expected work and tasks, by listing the epics and then break them down into user stories or smaller tasks to ultimately finish the site in the allocated time.
 
 To see my Kanban board in the project, click [here](https://github.com/users/ian-IBCIRL/projects/5).
