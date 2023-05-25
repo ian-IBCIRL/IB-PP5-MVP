@@ -70,7 +70,23 @@ The approved way to generate interest is an organic approach as the marketing bu
 
 Facebook marketing is often more important than any other platform, we are using it for this project. 
 
-An image of the Facebook site can be found [here](docs/screenshot/others/FB_page_1.png) and [here](docs/screenshot/others/FB_page_2.png).
+An image of the Facebook site can be seen
+
+Screenshot of Facebook page plan
+![Screenshot of Facebook page plan](./docs/screenshot/others/FB_page_1.png)
+
+Screenshot of Facebook page live
+![Screenshot of Facebook page live](./docs/screenshot/others/FB_page_2.png)
+
+Screenshot of Facebook page mobile
+![Screenshot of Facebook page mobile](./docs/screenshot/others/FB_page_3.png)
+
+Screenshot of Facebook page desktop
+![Screenshot of Facebook page desktop](./docs/screenshot/others/FB_page_4.png)
+
+Screenshot of Facebook page development
+![Screenshot of Facebook page development](./docs/screenshot/others/FB_page_5.png)
+
 
 ### Search Engine Optimization
 The meta keywords and description in base.html have been amended to the researched keywords. 
