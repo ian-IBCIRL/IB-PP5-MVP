@@ -24,9 +24,11 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
-
+@admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """
     Comment management section for admin
     """
     list_display = ('name', 'body', 'product', 'created_on', 'approved')
+    list_filter = ('approved', 'created_on')
+    search_fields = ('name', 'email', 'body')
