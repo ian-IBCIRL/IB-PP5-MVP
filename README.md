@@ -288,8 +288,8 @@ wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
 - Shopping Bag
 
-    Users can add items to their shopping bag. This page gives them to +/- their products as well as to delete them.
-    ![](docs/wireframes/wireframe-bag.png)
+    Users can add items to their ordersheet. This page gives them to +/- their products as well as to delete them.
+    ![](docs/wireframes/wireframe-ordersheet.png)
 
 - Checkout Page
 
@@ -335,8 +335,6 @@ The site is based around a number of models separated into the following main gr
 ![](docs/screenshot/models/db3.png)
 
 **Category** - stores the details of a product category.
-
-![](docs/screenshot/models/db2.png)
 
 - **Product** - stores all the details about a product for sale. Connected to the featured product, recently added products and Category objects via foreign key relationships.
 
