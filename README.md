@@ -311,7 +311,7 @@ To see the list of [issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is
 At the initial stages I decided on core requirements ('must have' issues) for the project and some 'could have' issues but not critical requirements.
 
 From these I added the associated Epics, user stories, acceptance criteria and the tasks so I can track my work effectively.
-I did also use [milestones](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestones) as another way to visualise Epic completion status.
+I did also use [milestones](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestones?direction=desc&sort=completeness&state=open) as another way to visualise Epic completion status.
 
 Once I completed a task I note the item as completed and if all parts of this story were completed I would move it from **In Progress** to **Done** on the Kanban board. Acceptance criteria would also be noted where appropriate.
 
