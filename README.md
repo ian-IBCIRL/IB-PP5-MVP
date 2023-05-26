@@ -121,10 +121,13 @@ The URLs on your website that a search engine crawler is permitted to visit are 
 - only logged in users can access the profile or logout pages.
 - only logged out users can access login and register page.
 - The menu collapses to a toggler on smaller screens, leaving the account, search and ordersheet and burger menu links in the navbar allowing for easy navigation across all device sizes.
+
 - Navigation on large screen
+
     ![](docs/screenshot/features/navigation.png)
 
 - Navigation on smaller screen
+ 
     ![](docs/screenshot/features/navigation-mobile.png)
 
 ### Footer
@@ -329,26 +332,26 @@ The site is based around a number of models separated into the following main gr
 
 **Product Models**
 
-![](docs/screenshot/models_database/db3.png)
+![](docs/screenshot/models/db3.png)
 
 **Category** - stores the details of a product category.
 
-![](docs/screenshot/models_database/db2.png)
+![](docs/screenshot/models/db2.png)
 
 - **Product** - stores all the details about a product for sale. Connected to the featured product, recently added products and Category objects via foreign key relationships.
 
-![](docs/screenshot/models_database/db3.png)
+![](docs/screenshot/models/db3.png)
 
 - **Review / Comments** - stores a user review of a product and is connected to the Product and by foreign key relationships.
 
-![](docs/screenshot/models_database/db4.png)
+![](docs/screenshot/models/db4.png)
 
 **User Models**
 
 - **User** - the Django Allauth user model containing information such as username and password.
 - **Profile** - stores a users default delivery information and is connected to the User via a one to one relationship.
 
-![](docs/screenshot/models_database/db7.png)
+![](docs/screenshot/models/db7.png)
 
 
 
@@ -356,7 +359,7 @@ The site is based around a number of models separated into the following main gr
 - **Order** - a foreign key relationship connects the user profile to the storage of the complete order data.
 - **OrderLineItem** - stores the product information for a single product purchased on an order. Foreign key relationships connect the product and order.
 
-![](docs/screenshot/models_database/db2.png)
+![](docs/screenshot/models/db2.png)
 
 Three additional models providing general information for the site user or store owner have also been used.
 
@@ -364,7 +367,7 @@ Three additional models providing general information for the site user or store
 - **Privacy** - provides the site privacy policy.
 - **FAQ** - stores FAQ questions and answers that the site owner has added to the site.
 
-    ![](docs/screenshot/models_database/db5.png)
+    ![](docs/screenshot/models/db5.png)
 
 
 ## Technologies Used
