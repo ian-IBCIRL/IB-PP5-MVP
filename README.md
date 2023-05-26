@@ -318,26 +318,45 @@ The color palette for this project was kept as simple as possible in order to ma
 
 Two relational databases were used to create the site. 
 The builtin Django SQLite database was used for development and then Elephant SQL Postgres for the deployed version. 
+
+I found https://dbschema.com/download.html  did a super job of documenting my database ERD etc. 
+
+Bit messy getting the elephant SQL url in the right format to log in, but easy enough
+![](docs/screenshot/models_database/db6.png)
+
+
 The site is based around a number of models separated into the following main groups.
 
 **Product Models**
 
+![](docs/screenshot/models_database/db3.png)
+
 **Category** - stores the details of a product category.
+
+![](docs/screenshot/models_database/db2.png)
 
 - **Product** - stores all the details about a product for sale. Connected to the featured product, recently added products and Category objects via foreign key relationships.
 
+![](docs/screenshot/models_database/db3.png)
+
 - **Review / Comments** - stores a user review of a product and is connected to the Product and by foreign key relationships.
+
+![](docs/screenshot/models_database/db4.png)
 
 **User Models**
 
 - **User** - the Django Allauth user model containing information such as username and password.
-
 - **Profile** - stores a users default delivery information and is connected to the User via a one to one relationship.
+
+![](docs/screenshot/models_database/db7.png)
+
+
 
 **Order Models**
 - **Order** - a foreign key relationship connects the user profile to the storage of the complete order data.
-
 - **OrderLineItem** - stores the product information for a single product purchased on an order. Foreign key relationships connect the product and order.
+
+![](docs/screenshot/models_database/db2.png)
 
 Three additional models providing general information for the site user or store owner have also been used.
 
@@ -345,14 +364,7 @@ Three additional models providing general information for the site user or store
 - **Privacy** - provides the site privacy policy.
 - **FAQ** - stores FAQ questions and answers that the site owner has added to the site.
 
-    ![](docs/screenshot/models_database/database-model-1.png)
-
-    ![](docs/screenshot/models_database/database-model-2.png)
-
-    ![](docs/screenshot/models_database/database-model-3.png)
-
-    ![](docs/screenshot/models_database/database-model-4.png)
-
+    ![](docs/screenshot/models_database/db5.png)
 
 
 ## Technologies Used
