@@ -324,12 +324,16 @@ At the end of a coding session I would update the user stories with a comment of
 
 ##### Completed Epics
 
-1. [EPIC: setup django and deploy the site](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/1)
-2. [EPIC: view and open posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/3)
-3. [EPIC: See and add/remove likes and see and add comments](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/15)
-4. [EPIC: Admin can manage posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/16)
-5. [EPIC: User sign up, login and CRUD posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/17)
-6. [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/22)
+1. [EPIC: Initial Project Setup](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/1)
+2. [EPIC: The Home Page](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/3)
+3. [EPIC: Setup Services and Products](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/6)
+4. [EPIC: Order Processing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/11)
+5. [EPIC: User profiles](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/18)
+6. [EPIC: Site and Product Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/26)
+7. [EPIC: Additional Features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/31)
+8. [EPIC: SEO and Web Marketing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/36)
+9. [EPIC: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/40)
+10. [EPIC: User CRUD for orders (and profiles)](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/42)
 
 #### User stories
 
@@ -339,23 +343,53 @@ To view details of the user stories please click on a user story below.
 See the project page for the full [list of issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue) to see the details and comments.
 See the Kanban page [here](https://github.com/users/ian-IBCIRL/projects/4/views/1)
 
- 1. [USER STORY: Deploy Website](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
- 2. [USER STORY: View Post List](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/4)
- 3. [USER STORY: Open a Post](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/5)
- 4. [USER STORY: Account Registration](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/8)
- 5. [USER STORY: Comment on a Post](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
- 6. [USER STORY: Edit My Posts Only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/19)
- 7. [USER STORY: Like / Unlike posts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/10)
- 8. [USER STORY: Delete Posts (CRUD)](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
- 9. [USER STORY: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/23)
+ 1. [USER STORY: Setup Authentication](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
+ 2. [USER STORY: Setup Base Page](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/4)
+ 3. [USER STORY: Setup Home Page (index.html)](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/5)
+ 4. [USER STORY: Product and services setup](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/7)
+ 5. [USER STORY: Product Filtering](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/8)
+ 6. [USER STORY: Product Searching](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
+ 7. [USER STORY: Product Sorting](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/10)
+ 8. [USER STORY: Order Processing Setup](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/12)
+ 9. [USER STORY: Adding Products](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/13)
+ 10. [USER STORY: Adjusting and Deleting Products](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/14)
+ 11. [USER STORY: Checkout](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/15)
+ 12. [USER STORY: Purchasing with Stripe](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/16)
+ 13. [USER STORY: NOtifications, Messages, Toasts](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/17)
+ 14. [USER STORY: Setup User profiles](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/19)
+ 15. [USER STORY: Adding Users with Profiles](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/20)
+ 16. [USER STORY: Adjust allauth default pages](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/21)
+ 17. [USER STORY: Adjusting user profile and default delivery info](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/22)
+ 18. [USER STORY: Adding Order History to User Profile](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/23)
+ 19. [USER STORY: Stripe Webhooks to catch delays/errors](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/24)
+ 20. [USER STORY: Notifications from Profile info](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/25)
+ 21. [USER STORY: Adding Products to catalog as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/27)
+ 22. [USER STORY: Editing Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/28)
+ 23. [USER STORY: Deleting Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/29)
+ 24. [USER STORY: Adjusting admin+allauth forms format](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/30)
+ 25. [USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
+ 26. [USER STORY: FAQ app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/33)
+ 27. [USER STORY: Contact app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/34)
+ 28. [USER STORY: Privacy app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/35)
+ 29. [USER STORY: SEO Features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/37)
+ 30. [USER STORY: Web marketing and FB](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/38)
+ 31. [USER STORY: e-commerce business model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/39)
+ 32. [USER STORY: Testing](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/41)
+ 33. [USER STORY: account registration](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/43)
+ 34. [USER STORY: Create order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/44)
+ 35. [USER STORY: Update order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/45)
+ 36. [USER STORY: Delete my orders only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/46)
+ 37. [USER STORY: Setup CSS](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/47)
+ 38. [USER STORY: Site Menu](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/50)
+
 
 The following User stories were not completed as they are possible future features:
 
  ##### Future Feature User stories
- 
- 1. [USER STORY: Consulting Service Bookings](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/24)
- 2. [USER STORY: Social Login](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/14)
- 
+
+ 39. [USER STORY: Consulting Service Bookings](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/48)
+ 40. [USER STORY: Social Media Login](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/49)
+
 I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
 
 
