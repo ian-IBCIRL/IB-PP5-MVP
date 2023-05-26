@@ -22,6 +22,9 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 ## Table of Contents
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
+* [Design](#design)
+     - [Wireframes](#wireframes)
+     - [Model Schema](#model-schema)
 * [Technologies Used](#technologies-used)
 * [Agile Development](#agile-development)
 * [Testing](#testing)
@@ -243,6 +246,109 @@ The home page is divided into different sections.
 
 Future Enhancements here
 
+## Design
+The website is created to look good and be easy to use, and also making it possible for a customer to browse and buy products and services of interest quickly and easily.
+Wireframes for desktop, tablet, and mobile views were produced and only few colors were used to maintain the ARIA accessibility of the website.
+
+- ## Wireframes
+wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
+
+- Home Page 
+
+    ![](docs/wireframes/wireframe-home.png)
+
+- Product Page
+
+    Product page displays all the products available in the store.
+![](docs/wireframes/wireframe-all-products.png)
+
+- Product Details Page
+
+    Displays the details of the product. Users can add products to their bag. They can also +/- the amount of products and update the bag from here
+![](docs/wireframes/wireframe-product-detail.png)
+
+- Register Page
+
+    Users can register on this page, If they are already registered, the page gives them a link to the sign in page
+    ![](docs/wireframes/wireframe-register.png)
+
+- Sign In
+
+    Users can sign in on this page, If they are not registered, the page gives them a link to the register page/
+    ![](docs/wireframes/wireframe-signin.png)
+
+- Shopping Bag
+
+    Users can add items to their shopping bag. This page gives them to +/- their products as well as to delete them.
+    ![](docs/wireframes/wireframe-bag.png)
+
+- Checkout Page
+
+    Users can enter their shipping and bank details to make a purchase. To save their details for future use, they need to create and account
+    ![](docs/wireframes/wireframe-checkout.png)
+
+- Checkout Success Page
+
+    Once the checkout is complete, the user is redirected to checkout success page, where they can see their order details and shipping details.
+    ![](docs/wireframes/wireframe-checkout-success.png)
+
+- Contact Page
+
+    Users can view company details and they can fill up the form contact us.
+    ![](docs/wireframes/wireframe-contact.png)
+
+- Faqs Page
+
+    Users can find frequently asked questions
+    ![](docs/wireframes/faqs.png)
+
+- ## Color Schema
+
+The color palette for this project was kept as simple as possible in order to maintain the contrast between the background and the foreground.
+
+![](docs/screenshot/others/colors.png)
+
+- ## Model Schema
+
+Two relational databases were used to create the site. 
+The builtin Django SQLite database was used for development and then Elephant SQL Postgres for the deployed version. 
+The site is based around a number of models separated into the following main groups.
+
+**Product Models**
+
+**Category** - stores the details of a product category.
+
+- **Product** - stores all the details about a product for sale. Connected to the featured product, recently added products and Category objects via foreign key relationships.
+
+- **Review / Comments** - stores a user review of a product and is connected to the Product and by foreign key relationships.
+
+**User Models**
+
+- **User** - the Django Allauth user model containing information such as username and password.
+
+- **Profile** - stores a users default delivery information and is connected to the User via a one to one relationship.
+
+**Order Models**
+- **Order** - a foreign key relationship connects the user profile to the storage of the complete order data.
+
+- **OrderLineItem** - stores the product information for a single product purchased on an order. Foreign key relationships connect the product and order.
+
+Three additional models providing general information for the site user or store owner have also been used.
+
+- **Contact** - stores a site user message submitted through the contact form.
+- **Privacy** - provides the site privacy policy.
+- **FAQ** - stores FAQ questions and answers that the site owner has added to the site.
+
+    ![](docs/screenshot/models_database/database-model-1.png)
+
+    ![](docs/screenshot/models_database/database-model-2.png)
+
+    ![](docs/screenshot/models_database/database-model-3.png)
+
+    ![](docs/screenshot/models_database/database-model-4.png)
+
+
+
 ## Technologies Used
 
 * [Back to table of contents](#table-of-contents) 
@@ -392,6 +498,11 @@ The following User stories were not completed as they are possible future featur
  40. [USER STORY: Social Media Login](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/49)
 
 I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
+
+## Design
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
 
 
 ## Testing
