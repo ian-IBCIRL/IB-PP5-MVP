@@ -253,7 +253,7 @@ The home page is divided into different sections.
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Future Enhancements here
+Future Enhancements [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestone/2)
 
 ## Design
 The website is created to look good and be easy to use, and also making it possible for a customer to browse and buy products and services of interest quickly and easily.
