@@ -138,9 +138,47 @@ SITE_ID = 1
 
 WSGI_APPLICATION = 'polshop.wsgi.application'
 
-DATABASES = {
+
+DEVELOPMENT = False
+
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'polshop@example.com'
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'HOST': '127.0.0.1',
+            # Set to empty string for localhost. Not used with sqlite3.
+            'USER': 'mydatabaseuser',
+            'NAME': 'mydatabase',
+            'TEST': {
+                'NAME': 'mytestdatabase',
+                },
+            }
+    }
+else:
+    DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
+    }
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAILUSR')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAILPW')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAILUSR')
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
+LOGIN_URL = '/accounts/login/'  # URL for logging in
+LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
+LOGOUT_REDIRECT_URL = '/'
+
+
 
 
 # Password validation
@@ -219,25 +257,4 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEVELOPMENT = False
 
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'polshop@example.com'
-else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_USE_TLS = True
-    EMAIL_PORT = 587
-    EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = os.environ.get('EMAILUSR')
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAILPW')
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAILUSR')
-
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
-LOGIN_URL = '/accounts/login/'  # URL for logging in
-LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
-LOGOUT_REDIRECT_URL = '/'

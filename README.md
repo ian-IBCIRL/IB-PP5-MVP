@@ -1,6 +1,8 @@
+# PolicyShop
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome  
+Welcome !
 
 This is my Code Institute student PP5 final project PolicyShop readme for the project deployed to [https://ib-pp5-polshop.herokuapp.com/](https://ib-pp5-polshop.herokuapp.com/)
 
@@ -10,7 +12,6 @@ The Policy Shop is an online store where clients can purchase a wide range of cy
 Stripe is used as the payment processor. 
 Use the test card number 4242 4242 4242 4242 with a future expiration date, a three-digit CVC, and a five-digit postal code to test the payment functionality.
 
-# PolicyShop
 
 ### By [Ian Bowell](https://www.instagram.com/skianianiam/)
 
@@ -116,7 +117,7 @@ The URLs on your website that a search engine crawler is permitted to visit are 
 - The user can see whether they are logged in from the "My Account" dropdown options, which vary depending on the user role (admin etc). This dropdown has additional choices only available to admin users.
 - only logged in users can access the profile or logout pages.
 - only logged out users can access login and register page.
-- The menu collapses to a toggler on smaller screens, leaving the account, search and basket and burger menu links in the navbar allowing for easy navigation across all device sizes.
+- The menu collapses to a toggler on smaller screens, leaving the account, search and ordersheet and burger menu links in the navbar allowing for easy navigation across all device sizes.
 - Navigation on large screen
     ![](docs/screenshot/features/navigation.png)
 
@@ -442,6 +443,7 @@ This prevents users from breaking the functionality of the site, whilst still en
    In the end, I resolved it by removing the path element from the template filename, and adding the directory to templates listed in settings.py
    I put in place lots of console logging which I have since removed, but it was nice to see the flow of checkout in the logs.
 
+Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
 ## UX
 
@@ -470,7 +472,9 @@ Here is the version history:
 
 **04 May 2023:** Successful initial heroku deployment.
 
-**20 May 2023:** Successful initial post deletion logic. Needs more checks and post editing/adding.
+**20 May 2023:** Successful initial order processing logic.
+
+**26 May 2023:** Successful functional deployment. Working on testing and README docs from now on.
 
 **10 June 2023:** Successful deployment of submission features.
 
@@ -525,7 +529,7 @@ use `django-admin startproject "put your appname here" .` DON'T forget the DOT a
 Here we use `polshop`
 Don't forget the DOT at the end as this tells Django admin that we want to create our project in the current top level folder.
 
-Then use `python3 manage.py startapp basket` for example, to create the order basket app within the project
+Then use `python3 manage.py startapp ordersheet` for example, to create the order ordersheet app within the project
 
 And we update `settings.py` with details for the apps, hosts and secrets etc.
 Remove the default SECRET_KEY secret entry in settings.py and use the env.py load method detailed below.

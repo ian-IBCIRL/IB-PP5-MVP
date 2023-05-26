@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .forms import FaqForm
+from .forms import FaqsForm
 
 
 class TestForm(TestCase):

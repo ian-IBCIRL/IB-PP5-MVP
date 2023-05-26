@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Faq
+from .models import Faqs
 
 
 class TestModels(TestCase):
@@ -11,7 +11,7 @@ class TestModels(TestCase):
         """
         Test to see if it returns a string
         """
-        faq = Faq.objects.create(
+        faq = faq.objects.create(
             category='OR',
             questions='Test Question',
             answers='Test Answer'

@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from .models import Faq
+from .models import Faqs
 
 
 class TestViews(TestCase):
