@@ -354,18 +354,18 @@ Three additional models providing general information for the site user or store
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-## Language Used
+- ## Language Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-## Frameworks Used
+- ## Frameworks Used
 - [Django](https://www.djangoproject.com/) - A high-level Python web framework for rapid development with clean, pragmatic design.
 
 - [Bootstrap](https://getbootstrap.com/) - A framework for building responsive, mobile-first sites.
 
-# Libraries Used
+- # Libraries Used
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - is used for user authentication, registration & account management to the site.
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - is used to add bootstrap styling to the forms used.
 - [Django Countries](https://pypi.org/project/django-countries/) - is used for the country CountryField in the checkout page.
@@ -387,11 +387,11 @@ Three additional models providing general information for the site user or store
 - [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
 
 
-## Database Used
+- ## Database Used
 
 [ElephantSQL](https://www.elephantsql.com/) for deployment to heroku.
 
-## Stripe
+- ## Stripe
 [Stripe](https://stripe.com/gb) has been used for the payment for this website.
 
 The developer mode in Stripe allows us to use and process test payments.
