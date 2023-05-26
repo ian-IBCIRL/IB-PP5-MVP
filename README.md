@@ -179,7 +179,7 @@ The home page is divided into different sections.
 - The page calculates prices of items automatically if an item is on sale.
 - The user may easily make their final purchasing decisions because they have the opportunity to update or remove goods from the ordersheet.
 
-    ![](docs/screenshot/features/shopping-bag.png)
+    ![](docs/screenshot/features/ordersheet.png)
 
 ### Checkout Page
 - The checkout page is intended to make it easy for a user to make purchase.
@@ -207,7 +207,7 @@ The home page is divided into different sections.
 - Store owners can edit, update and delete the privacy policy via the site admin page.
     ![](docs/screenshot/features/privacy.png)
 
-### FAQS Page
+### FAQ Page
 - The FAQ page displays FAQs so that the user can easily find an answer.
 - Through the FAQ page, the store owner can quickly add a question and the relevant answer, and it will be immediately available for site visitors.
 - Store owners can edit, update and delete a FAQ.
@@ -219,14 +219,14 @@ The home page is divided into different sections.
 - The admin can view the message in the admin panel. 
 - The admin does not have option to reply back to the message but that can be added in the future feature
 
-    ![](docs/screenshot/features/contact-us.png)
+    ![](docs/screenshot/features/contact.png)
 
 ### Error 404 Page
 
 - A 404 error page gives the user a helpful message if a link is used incorrectly.
 - It also gives the user a way to get back to the home page with a link.
 
-    ![](docs/screenshot/features/error-404.png)
+    ![](docs/screenshot/features/404.png)
 
 ### Forgot Password
 - If a user forgets their password they can reset it. 
@@ -234,10 +234,16 @@ The home page is divided into different sections.
 - User will be asked to enter their password twice for confirmation.
 
 - password reset form
-    ![](docs/screenshot/features/forgot-password.png)
+    ![](docs/screenshot/features/forgotpw1.png)
+
+- password reset confirmed form
+    ![](docs/screenshot/features/forgotpw2.png)
 
 - email received to reset password
-    ![](docs/screenshot/features/forgot-password-2.png)
+    ![](docs/screenshot/features/forgotpw3.png)
+
+- page to reset password
+    ![](docs/screenshot/features/forgotpw4.png)
 
 ## Future Enhancements
 
