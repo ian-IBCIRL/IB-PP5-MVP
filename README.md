@@ -624,7 +624,7 @@ Further details of the [testing](/docs/testing/TESTING.md) procedures and method
 * [Back to top of README.md](#policyshop) 
 
 The site has been deployed to Heroku at [https://ib-pp5-polshop.herokuapp.com/](https://ib-pp5-polshop.herokuapp.com/)
-Deployment details are [here](/docs/DEPLOYMENT.md}
+Deployment details are [here](/docs/DEPLOYMENT.md)
 
 ## Release History
 * [Back to table of contents](#table-of-contents) 
