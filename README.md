@@ -28,7 +28,6 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 * [Technologies Used](#technologies-used)
 * [Agile Development](#agile-development)
 * [Testing](#testing)
-* [User Experience Design (UX)](#ux)
 * [Deployment](#deployment)
 * [Release History](#release-history)
 * [Credits](#credits)
