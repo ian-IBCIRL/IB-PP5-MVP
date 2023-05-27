@@ -1,4 +1,7 @@
 # Deployment
+
+To return to the main README click [here](/README.md)
+
 ### Table of contents
 
 - [Deploying the site](#deploying-the-site)
@@ -17,8 +20,10 @@
 
 
 ## Reminders
+
 * [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#policyshop) 
+* [Back to top of DEPLOYMENT.md](#deployment) 
+* To return to the main README click [here](/README.md)
 
 To install django, `pip3 install 'django<4' gunicorn`
 
@@ -37,6 +42,11 @@ Once all is installed, you can record the installed packages to requirements.txt
 with `pip3 freeze > requirements.txt`
 
 and reload them with `pip3 install -r requirements.txt` 
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of DEPLOYMENT.md](#deployment) 
+* To return to the main README click [here](/README.md)
+
 
 ### Initiating the Django project files
 To create the essential manage.py file and the key step in enabling the site to launch
@@ -74,6 +84,10 @@ if os.path.isfile('env.py'):
 
 To set up a app/database admin we need `python3 manage.py createsuperuser`
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of DEPLOYMENT.md](#deployment) 
+* To return to the main README click [here](/README.md)
+
 
 ### add an admin user
 To set up a app/database admin we need `python3 manage.py createsuperuser`
@@ -100,6 +114,11 @@ Then we can create and edit index.html in `home/templates/home` and extend base.
 To add a favicon.ico to /static, add `<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>` to base.html and `STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]` to settings.py
 
 Do the same for media dirs etc.
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of DEPLOYMENT.md](#deployment) 
+* To return to the main README click [here](/README.md)
+
 
 ### enable fontawesome icon use
 add `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">` to base.html to get icons for menu buttons etc.
@@ -154,4 +173,9 @@ Yes! We'd strongly encourage you to look at the source code!
 
 ---
 
-Happy coding!
+Happy coding! And thanks for reading this far !
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of DEPLOYMENT.md](#deployment) 
+* To return to the main README click [here](/README.md)
+
