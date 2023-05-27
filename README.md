@@ -258,7 +258,14 @@ The home page is divided into different sections.
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Future Enhancements [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestone/2)
+Future Enhancements user stories [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestone/2)
+
+### Other future features
+- Added product consulting availability hours and displays next date work can be started and completed.
+- An order tracking page with ordersheet linked to multiple delivery options to allow clients to monitor order delivery and scheduling.
+- A 'Favourite' button where clients can save services to their favourites for later use. 
+- Site admin can respond to a message on the site
+- Site admin can respond to and/or delete a comment on the site
 
 ## Design
 The website is created to look good and be easy to use, and also making it possible for a customer to browse and buy products and services of interest quickly and easily.
@@ -616,8 +623,8 @@ Further details of the [testing](/docs/testing/TESTING.md) procedures and method
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Deployment here
-
+The site has been deployed to Heroku at [https://ib-pp5-polshop.herokuapp.com/](https://ib-pp5-polshop.herokuapp.com/)
+Deployment details are [here](/docs/DEPLOYMENT.md}
 
 ## Release History
 * [Back to table of contents](#table-of-contents) 
