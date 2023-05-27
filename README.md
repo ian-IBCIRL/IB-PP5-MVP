@@ -22,7 +22,7 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 ## Table of Contents
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
-* [Design](#design)
+* [Design/UX](#design)
      - [Wireframes](#wireframes)
      - [Model Schema](#model-schema)
 * [Technologies Used](#technologies-used)
@@ -152,6 +152,9 @@ The home page is divided into different sections.
 - It shows the product image, who reviewed it and the review details.
 ![](docs/screenshot/features/review.png)
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
 ### Products Page
 - The All Products page displays all the products available on the website. 
 - The user has the option to sort the products by various categories. 
@@ -197,6 +200,9 @@ The home page is divided into different sections.
 - An email of the order confirmation is also sent to the user.
 
     ![](docs/screenshot/features/checkout-success.png)
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
 
 
 ### Profile Page
@@ -262,6 +268,9 @@ Wireframes for desktop, tablet, and mobile views were produced and only few colo
 - ## Wireframes
 wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
 - Home Page 
 
     ![](docs/wireframes/wireframe-home.png)
@@ -290,6 +299,9 @@ wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
     If they are not registered, there is a link to the register page.
     
     ![](docs/wireframes/wireframe-signin.png)
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
 
 - Ordersheet
 
@@ -323,6 +335,10 @@ wireframes for the project were created using [Balsamiq](https://balsamiq.com/)
     
     ![](docs/wireframes/faqs.png)
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
+
 - ## Color Schema
 
 The color palette for this project was kept as simple as possible in order to maintain the contrast between the background and the foreground.
@@ -333,6 +349,9 @@ The color palette for this project was kept as simple as possible in order to ma
 
 Two relational databases were used to create the site. 
 The builtin Django SQLite database was used for development and then Elephant SQL Postgres for the deployed version. 
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
 
 I found https://dbschema.com/download.html  did a super job of documenting my database ERD etc. 
 
@@ -355,6 +374,10 @@ The site is based around a number of models separated into the following main gr
 - **Review / Comments** - stores a user review of a product and is connected to the Product and by foreign key relationships.
 
 ![](docs/screenshot/models/db4.png)
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
 
 **User Models**
 
@@ -458,6 +481,9 @@ At the end of a coding session I would update the user stories with a comment of
  - What is left to be done
  - Reminders to track where I finished so subsequent work would follow.
 
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
 #### Epics
 
 ##### Completed Epics
@@ -480,6 +506,9 @@ At the end of a coding session I would update the user stories with a comment of
 To view details of the user stories please click on a user story below.
 See the project page for the full [list of issues](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues?q=is%3Aissue) to see the details and comments.
 See the Kanban page [here](https://github.com/users/ian-IBCIRL/projects/4/views/1)
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
 
  1. [USER STORY: Setup Authentication](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
  2. [USER STORY: Setup Base Page](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/4)
@@ -529,11 +558,6 @@ The following User stories were not completed as they are possible future featur
  40. [USER STORY: Social Media Login](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/49)
 
 I decided against implementing some future features at this time due to deadlines and because the core requirements of the project have been satisfied elsewhere.
-
-## Design
-* [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#policyshop) 
-
 
 
 ## Testing
@@ -587,12 +611,6 @@ This prevents users from breaking the functionality of the site, whilst still en
 
 Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
-## UX
-
-* [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#policyshop) 
-
-UX here
 
 ## Deployment
 
