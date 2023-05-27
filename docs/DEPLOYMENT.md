@@ -224,7 +224,7 @@ else:
 
 - As we need to insert the user access key and secret access key into the Heroku config vars, you will now need to download the CSV file. You won't be able to view the CSV again, so be sure to download it now.
 
-### Connecting Django to our S3 bucket
+### Connecting Django to AWS S3 bucket
 
 
 * [Back to table of contents](#table-of-contents) 
