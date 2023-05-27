@@ -347,6 +347,8 @@ A Web Server Gateway Interface (WSGI) server implements the web server side of t
 https://www.fullstackpython.com/wsgi-servers.html 
 
 You may also want to install the following packages for the database and storage in Cloudinary or AWS.
+See this section for more on [Connecting Django to the AWS S3 bucket](#connecting-django-to-AWS-s3-bucket)
+
 Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 and `pip3 install dj_database_url==0.5.0 psycopg2`
 and `pip3 install dj3-cloudinary-storage` or the AWS equivalent that we use here for static data
@@ -411,6 +413,8 @@ in settings.py add EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBacke
 add ACCOUNT_ and LOGIN_ settings too.
 
 use `cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* templates/allauth` to copy the baseline allauth html etc to allow modification with prioritised files
+
+Check out settings.py for more on using GMail for recommended alternative production email sending functions 
 
 ### using base.html
 
