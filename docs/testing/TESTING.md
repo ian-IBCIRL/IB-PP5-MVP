@@ -174,7 +174,8 @@ I will fork the MVP and try to extend automated testing later.
 The link I reviewed is also here.
 https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project
 
-The first step in automated testing is to check the coverage with the `coverage report` command. This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
+The first step in automated testing is to check the coverage with the `coverage run manage.py test  && coverage report` command. 
+This shows the name of each file in the project, the number of statements and and test miss/fail, resuting in a percentage coverage for the file and the project as a whole.
 
 All tests in the project can be run with the `./manage.py test' command
 
