@@ -11,7 +11,7 @@ class TestForm(TestCase):
         """
         Check if all the field is required
         """
-        form = FaqForm({
+        form = FaqsForm({
             'category': '',
             'questions': '',
             'answers': ''
@@ -23,5 +23,5 @@ class TestForm(TestCase):
         self.assertEqual(form.errors['answers'][0], 'This field is required.')
 
     def test_all_fields_are_displayed_in_the_form(self):
-        form = FaqForm()
+        form = FaqsForm()
         self.assertEqual(form.Meta.fields, '__all__')

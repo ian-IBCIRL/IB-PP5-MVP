@@ -11,14 +11,14 @@ class TestViews(TestCase):
 
     def setUp(self):
         self.superuser = User.objects.create_superuser(
-            'admin', 'admin@email.com', 'adminpassword'
+            'admin', 'ibowellms@gmail.com', 'adminpassword'
         )
 
         self.user = User.objects.create_user(
             'ib', 'ib@email.com', 'ibpassword'
         )
 
-        self.faq = Faq.objects.create(
+        self.faq = Faqs.objects.create(
             category='OR',
             questions='sample question',
             answers='sample answers'
@@ -28,6 +28,7 @@ class TestViews(TestCase):
         """
         Test faq page
         """
+        print("\ntesting if FAQs page loads")
         response = self.client.get('/faq/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'faq/faq.html')
@@ -36,9 +37,16 @@ class TestViews(TestCase):
         """
         Test if the add_faq page loads
         """
+        print("\ntesting if ADD FAQs loads")
+        username = 'admin'
+        password = 'adminpassword'
         self.client.login(username='admin', password='adminpassword')
+        print("\ntesting if ADD FAQs loads for user: ", username)
+        print("\ntesting if ADD FAQs loads for password: ", password)
         response = self.client.get('/faq/add_faq/')
+        print("\nresponse is: ", response)
         self.assertEqual(response.status_code, 200)
+        print("\nchecking template")
         self.assertTemplateUsed(response, 'faq/add_faq.html')
 
     def test_edit_faq_page(self):
@@ -76,7 +84,8 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
 
         message = list(response.context.get('messages'))[0]
-        self.assertEqual(message.tags, "success")
+        print("\nMessage is;", message)
+        self.assertEqual(message.tags, "alert-success")
         self.assertTrue("FAQ added successfully!" in message.message)
 
     def test_edit_faq(self):
@@ -95,7 +104,7 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
 
         message = list(response.context.get('messages'))[0]
-        self.assertEqual(message.tags, "success")
+        self.assertEqual(message.tags, "alert-success")
         self.assertTrue("FAQ updated successfully!" in message.message)
 
     def test_delete_faqs(self):
@@ -120,7 +129,7 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
 
         message = list(response.context.get('messages'))[0]
-        self.assertEqual(message.tags, "error")
+        self.assertEqual(message.tags, "alert-danger")
         self.assertTrue(
             'Sorry - You are not authorised' in message.message)
 
@@ -135,7 +144,7 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
 
         message = list(response.context.get('messages'))[0]
-        self.assertEqual(message.tags, "error")
+        self.assertEqual(message.tags, "alert-danger")
         self.assertTrue(
             'Sorry - You are not authorised' in message.message)
 
@@ -150,6 +159,6 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
 
         message = list(response.context.get('messages'))[0]
-        self.assertEqual(message.tags, "error")
+        self.assertEqual(message.tags, "alert-danger")
         self.assertTrue(
             'Sorry - You are not authorised' in message.message)

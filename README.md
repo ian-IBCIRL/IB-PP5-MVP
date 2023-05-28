@@ -570,6 +570,11 @@ I decided against implementing some future features at this time due to deadline
 
 Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
 
+I managed to get automated testing to work for Profiles and FAQs models.
+
+I will continue to develop automated testing and continue to check coverage.
+
+
 Details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
 The site was also tested for responsiveness here https://www.browserstack.com/responsive and here https://ui.dev/amiresponsive

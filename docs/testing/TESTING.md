@@ -6,6 +6,9 @@ To return to the main README click [here](/README.md)
 * [Back to top of TESTING.md](#testing) 
 * [Go to the automated testing section](#automated-testing) 
 
+I managed to get [automated](#automated-testing) testing to work for Profiles and FAQs models.
+
+I will continue to develop automated testing and continue to check coverage.
 
 ## Home Page testing
 

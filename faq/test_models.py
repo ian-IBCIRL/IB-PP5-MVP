@@ -11,7 +11,7 @@ class TestModels(TestCase):
         """
         Test to see if it returns a string
         """
-        faq = faq.objects.create(
+        faq = Faqs.objects.create(
             category='OR',
             questions='Test Question',
             answers='Test Answer'

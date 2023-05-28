@@ -138,28 +138,23 @@ SITE_ID = 1
 
 WSGI_APPLICATION = 'polshop.wsgi.application'
 
+# Use the following database details for testing
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+# }
 
 DEVELOPMENT = False
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'polshop@example.com'
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'HOST': '127.0.0.1',
-            # Set to empty string for localhost. Not used with sqlite3.
-            'USER': 'mydatabaseuser',
-            'NAME': 'mydatabase',
-            'TEST': {
-                'NAME': 'mytestdatabase',
-                },
-            }
-    }
+
 else:
     DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
@@ -256,5 +251,3 @@ if 'USE_AWS' in os.environ:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
