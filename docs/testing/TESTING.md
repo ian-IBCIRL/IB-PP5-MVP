@@ -166,10 +166,11 @@ To return to the main README click [here](/README.md)
 
 - Automated testing was conducted for some apps using the "unittest" module from the Python standard library. 
 - This library is is integrated into Django's unit tests. 
+- My current coverage report is [here](/report.txt)
 
 I did consider following/modifying the instructions to set up further automated testing on this [page](https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project).
 But as automated testing is not required for the MVP, I did not want take the risk of breaking the MVP.
-I will fork the MVP and try to extend automated testing later.
+I will fork the MVP and try to add further automated testing later.
 
 The link I reviewed is also here.
 https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project

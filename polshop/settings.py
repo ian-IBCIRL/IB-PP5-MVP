@@ -139,23 +139,23 @@ SITE_ID = 1
 WSGI_APPLICATION = 'polshop.wsgi.application'
 
 # Use the following database details for testing
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
-DEVELOPMENT = False
+DEVELOPMENT = True
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'polshop@example.com'
 
 else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+#    DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#    }
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
@@ -172,9 +172,6 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4  # minimum username length
 LOGIN_URL = '/accounts/login/'  # URL for logging in
 LOGIN_REDIRECT_URL = '/'  # Where to go after login - usually /
 LOGOUT_REDIRECT_URL = '/'
-
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
