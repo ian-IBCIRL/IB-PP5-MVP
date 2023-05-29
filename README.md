@@ -406,59 +406,6 @@ Three additional models providing general information for the site user or store
 
     ![](docs/screenshot/models/db5.png)
 
-
-## Technologies Used
-
-* [Back to table of contents](#table-of-contents) 
-* [Back to top of README.md](#policyshop) 
-
-- ## Language Used
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-
-- ## Frameworks Used
-- [Django](https://www.djangoproject.com/) - A high-level Python web framework for rapid development with clean, pragmatic design.
-
-- [Bootstrap](https://getbootstrap.com/) - A framework for building responsive, mobile-first sites.
-
-- # Libraries Used
-- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - is used for user authentication, registration & account management to the site.
-- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - is used to add bootstrap styling to the forms used.
-- [Django Countries](https://pypi.org/project/django-countries/) - is used for the country CountryField in the checkout page.
-- [jQuery](https://jquery.com/) - is used for styling components and also in some of the custom JS used throughout the site.
-- [Google Fonts](https://fonts.google.com/) - is used for websites font
-- [Font Awesome](https://fontawesome.com/) - is used for all the icons on the site.
-- [Image Compressor](https://imagecompressor.com/) - is used to compress images
-- [Mailchimp](https://mailchimp.com/) - is used to create the newsletter signup form.
-- [Facebook Pages](https://www.facebook.com/)
-- [Stripe](https://stripe.com/gb) - is used for the processing of payments.
-- [Heroku](https://dashboard.heroku.com/apps) - is used to deploy the site.
-- [Gunicorn](https://gunicorn.org/) - is used as the server to run Django on Heroku.
-- [Amazon AWS](https://aws.amazon.com/) - is used store the static and media files for the site.
-- [PostgresSQL](https://www.postgresql.org/) - is used as the database for the site.
-- [Git](https://git-scm.com/) - is used as version control 
-- [Github](https://github.com/) - is used to store the project's code.
-- [pillow](https://pypi.org/project/Pillow/) - Python imaging library
-- [psycopg2](https://pypi.org/project/psycopg2/) - database adapter which allow us to connect with a postgres database
-- [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
-
-
-- ## Database Used
-
-[ElephantSQL](https://www.elephantsql.com/) for deployment to heroku.
-
-- ## Stripe
-[Stripe](https://stripe.com/gb) has been used for the payment for this website.
-
-The developer mode in Stripe allows us to use and process test payments.
-
-Type | card No | Expiry | CVC | ZIP
---- | --- | --- | --- | ---
-Success | **4242 4242 4242 4242** | A date in the future | Any 3 digits| Any 3 digits
-Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 digits| Any 5 digits
-
 ## Agile Development
 
 * [Back to table of contents](#table-of-contents) 
@@ -568,11 +515,11 @@ I decided against implementing some future features at this time due to deadline
 * [Back to table of contents](#table-of-contents) 
 * [Back to top of README.md](#policyshop) 
 
-Testing was divided into different sections to ensure everything was tested individually with test cases developed for each area.
+Testing is in different sections and individually tested with test cases developed for each function.
 
-I managed to get automated testing to work for Profiles and FAQs models.
+I managed to get [automated](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) testing to work [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) for Profiles and FAQs models.
 
-I will continue to develop automated testing and continue to check coverage.
+I will continue to develop [automated](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) testing and continue to check coverage.
 
 
 Details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
@@ -619,6 +566,59 @@ This prevents users from breaking the functionality of the site, whilst still en
    I put in place lots of console logging which I have since removed, but it was nice to see the flow of checkout in the logs.
 
 Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
+
+
+## Technologies Used
+
+* [Back to table of contents](#table-of-contents) 
+* [Back to top of README.md](#policyshop) 
+
+- ## Language Used
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+- ## Frameworks Used
+- [Django](https://www.djangoproject.com/) - A high-level Python web framework for rapid development with clean, pragmatic design.
+
+- [Bootstrap](https://getbootstrap.com/) - A framework for building responsive, mobile-first sites.
+
+- # Libraries Used
+- [Django Allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - is used for user authentication, registration & account management to the site.
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - is used to add bootstrap styling to the forms used.
+- [Django Countries](https://pypi.org/project/django-countries/) - is used for the country CountryField in the checkout page.
+- [jQuery](https://jquery.com/) - is used for styling components and also in some of the custom JS used throughout the site.
+- [Google Fonts](https://fonts.google.com/) - is used for websites font
+- [Font Awesome](https://fontawesome.com/) - is used for all the icons on the site.
+- [Image Compressor](https://imagecompressor.com/) - is used to compress images
+- [Mailchimp](https://mailchimp.com/) - is used to create the newsletter signup form.
+- [Facebook Pages](https://www.facebook.com/)
+- [Stripe](https://stripe.com/gb) - is used for the processing of payments.
+- [Heroku](https://dashboard.heroku.com/apps) - is used to deploy the site.
+- [Gunicorn](https://gunicorn.org/) - is used as the server to run Django on Heroku.
+- [Amazon AWS](https://aws.amazon.com/) - is used store the static and media files for the site.
+- [PostgresSQL](https://www.postgresql.org/) - is used as the database for the site.
+- [Git](https://git-scm.com/) - is used as version control 
+- [Github](https://github.com/) - is used to store the project's code.
+- [pillow](https://pypi.org/project/Pillow/) - Python imaging library
+- [psycopg2](https://pypi.org/project/psycopg2/) - database adapter which allow us to connect with a postgres database
+- [boto3](https://pypi.org/project/boto3/) - Allows connection to AWS S3 bucket
+
+
+- ## Database Used
+
+[ElephantSQL](https://www.elephantsql.com/) for deployment to heroku.
+
+- ## Stripe
+[Stripe](https://stripe.com/gb) has been used for the payment for this website.
+
+The developer mode in Stripe allows us to use and process test payments.
+
+Type | card No | Expiry | CVC | ZIP
+--- | --- | --- | --- | ---
+Success | **4242 4242 4242 4242** | A date in the future | Any 3 digits| Any 3 digits
+Require authorisation | **4000 0027 6000 3184** | A date in the future | Any 3 digits| Any 5 digits
 
 
 ## Deployment
