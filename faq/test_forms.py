@@ -9,7 +9,7 @@ class TestForm(TestCase):
 
     def test_all_item_is_required(self):
         """
-        Check if all the field is required
+        Check if all the field are required
         """
         form = FaqsForm({
             'category': '',

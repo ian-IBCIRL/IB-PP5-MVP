@@ -138,23 +138,29 @@ SITE_ID = 1
 
 WSGI_APPLICATION = 'polshop.wsgi.application'
 
-DEVELOPMENT = False
+DEVELOPMENT = True
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'polshop@example.com'
-
+    # Use the following database details for automated testing
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 else:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
-# Use the following database details for automated testing
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': BASE_DIR / 'db.sqlite3',
-#        }
-#    }
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
