@@ -21,7 +21,7 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 
 ## Table of Contents
 * [Features](#features)
-* [Future Enhancements](#future-enhancements)
+     - [Future Enhancements](#future-enhancements)
      - [Web Marketing](#web-marketing)
 * [Design/UX](#design)
      - [Wireframes](#wireframes)
