@@ -22,7 +22,7 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 ## Table of Contents
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
-* [Web Marketing](#web-marketing)
+     - [Web Marketing](#web-marketing)
 * [Design/UX](#design)
      - [Wireframes](#wireframes)
      - [Model Schema](#model-schema)
@@ -232,6 +232,10 @@ The use of social media marketing is very important for bringing in customers an
 The approved way to generate interest is an organic approach as the marketing budget will be small initially.
 
 Facebook marketing is often more important than any other platform, we are using it for this project. 
+
+I started with the CI planning template [below](./docs/screenshot/others/FB_page_1.png), 
+
+and created a page which may still be visible [here](https://www.facebook.com/profile.php?id=100093005050282)
 
 #### Images of the Facebook site can be seen as follows:
 
