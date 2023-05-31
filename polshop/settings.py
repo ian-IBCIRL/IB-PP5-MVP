@@ -41,9 +41,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['ib-pp5-polshop.herokuapp.com', 'localhost', '8000-ianibcirl-ibpp5mvp-zetl4nvtfpd.ws-eu97.gitpod.io']  # noqa
+ALLOWED_HOSTS = ['ib-pp5-polshop.herokuapp.com', '8000-ianibcirl-ibpp5mvp-zetl4nvtfpd.ws-eu98.gitpod.io']  # noqa
 
 
 # Application definition
@@ -138,7 +138,7 @@ SITE_ID = 1
 
 WSGI_APPLICATION = 'polshop.wsgi.application'
 
-DEVELOPMENT = True
+DEVELOPMENT = False
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -155,13 +155,6 @@ else:
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
@@ -169,6 +162,14 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAILUSR')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAILPW')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAILUSR')
+
+
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': BASE_DIR / 'db.sqlite3',
+#        }
+#    }
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True

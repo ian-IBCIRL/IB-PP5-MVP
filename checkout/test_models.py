@@ -26,16 +26,11 @@ class TestModels(TestCase):
         self.assertEqual(str(order.county), 'Kerry')
         self.assertEqual(str(order.full_name), 'Joe Jones')
 
-
-class TestModels(TestCase):
     """
-    Test for models
-    """
-
     def test_if_it_returns_an_orderlineitem(self):
-        """
-        Test to see if it returns order line items
-        """
+        
+        # Test to see if it returns order line items
+        
         testorder = Order.objects.create(
                                 full_name='Joe Jones',
                                 email='test@foo.com',
@@ -49,10 +44,10 @@ class TestModels(TestCase):
         )
 #        testproduct = get_object_or_404(Product, pk=1)
 
+
         testproduct = Product.objects.create(
                         pk=102,
-                        fields={
-                            name="Data Protection Policy",
+                        fields={ name:"Data Protection Policy",
                             category=2,
                             sku="pp5001600425a",
                             slug="pp5001600425a",
@@ -63,6 +58,7 @@ class TestModels(TestCase):
                         }
         )
 
+
         orderli = OrderLineItem.objects.create(
                 order=testorder,
                 product=testproduct,
@@ -72,3 +68,4 @@ class TestModels(TestCase):
         )
         self.assertEqual(str(orderli.product_size), 'XL')
         self.assertEqual(str(orderli.quantity), 10)
+        """

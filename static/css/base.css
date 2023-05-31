@@ -261,16 +261,23 @@ input[name='q']::placeholder {
     object-fit: cover;
 }
 
-/* ------------------------ Carosel/ Review/ comment section */
+/* ------------------------ Carousel/ Comment section */
 
 .carousel-width {
     /* margin: 0 100px 0 100px; */
     max-width: 500px;
     margin: auto;
+    align-items: center;
+    background: white;
+    justify-content: center;
 }
 
 .comment-body {
     max-height: 200px;
+    max-width: 200px;
+    background: white;
+    align-items: center;
+    justify-content: center;
 }
 
 /* -------------------------Subscribe form */
@@ -446,6 +453,10 @@ input[name='q']::placeholder {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    .comment-body {
+        font-size: .55rem;
     }
 }
 
