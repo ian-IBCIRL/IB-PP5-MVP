@@ -22,6 +22,7 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 ## Table of Contents
 * [Features](#features)
 * [Future Enhancements](#future-enhancements)
+* [Web Marketing](#web-marketing)
 * [Design/UX](#design)
      - [Wireframes](#wireframes)
      - [Model Schema](#model-schema)
@@ -64,46 +65,6 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
     - Can easily find the policies and services.
     - Have a great user experience.
     - Can purchase policies and services easily.
-
-### Web Marketing
-The use of social media marketing is very important for bringing in customers and increasing visibility of the site. 
-The approved way to generate interest is an organic approach as the marketing budget will be small initially.
-
-Facebook marketing is often more important than any other platform, we are using it for this project. 
-
-#### Images of the Facebook site can be seen as follows:
-
-- Screenshot of Facebook page CI planning template
-
-![Screenshot of Facebook page plan](./docs/screenshot/others/FB_page_1.png)
-
-- Screenshot of Facebook page live
-
-![Screenshot of Facebook page live](./docs/screenshot/others/FB_page_2.png)
-
-- Screenshot of Facebook page mobile
-
-![Screenshot of Facebook page mobile](./docs/screenshot/others/FB_page_3.png)
-
-- Screenshot of Facebook page desktop
-
-![Screenshot of Facebook page desktop](./docs/screenshot/others/FB_page_5.png)
-
-
-### Search Engine Optimization
-The meta keywords and description in base.html have been amended to the researched keywords. 
-On significant pages like the index and product pages, the site title has the name The Policy Shop and also has keywords.
-
-The homepage has also been designed with SEO in mind. 
-Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the major keywords, to improve search results. 
-
-For SEO purposes, we have also added a sitemap.xml and robots.txt file to the website's root directory for search engines to crawl the site. 
-
-A sitemap is a method of classifying a website, indicating the URLs and the information contained within each section.
-The URLs on your website that a search engine crawler is permitted to visit are specified in a robots.txt file.
-
-![](docs/screenshot/others/SEO-keywords.png)
-
 
 ## Features
 
@@ -264,6 +225,48 @@ Future Enhancements user stories [here](https://github.com/ian-IBCIRL/IB-PP5-MVP
 - A 'Favourite' button where clients can save services to their favourites for later use. 
 - Site admin can respond to a message on the site
 - Site admin can respond to and/or delete a comment on the site
+
+
+### Web Marketing
+The use of social media marketing is very important for bringing in customers and increasing visibility of the site. 
+The approved way to generate interest is an organic approach as the marketing budget will be small initially.
+
+Facebook marketing is often more important than any other platform, we are using it for this project. 
+
+#### Images of the Facebook site can be seen as follows:
+
+- Screenshot of Facebook page CI planning template
+
+![Screenshot of Facebook page plan](./docs/screenshot/others/FB_page_1.png)
+
+- Screenshot of Facebook page live
+
+![Screenshot of Facebook page live](./docs/screenshot/others/FB_page_2.png)
+
+- Screenshot of Facebook page mobile
+
+![Screenshot of Facebook page mobile](./docs/screenshot/others/FB_page_3.png)
+
+- Screenshot of Facebook page desktop
+
+![Screenshot of Facebook page desktop](./docs/screenshot/others/FB_page_5.png)
+
+
+### Search Engine Optimization
+The meta keywords and description in base.html have been amended to the researched keywords. 
+On significant pages like the index and product pages, the site title has the name The Policy Shop and also has keywords.
+
+The homepage has also been designed with SEO in mind. 
+Some of the keywords are also used in the text portions of the webpage, with strong tags surrounding the major keywords, to improve search results. 
+
+For SEO purposes, we have also added a sitemap.xml and robots.txt file to the website's root directory for search engines to crawl the site. 
+
+A sitemap is a method of classifying a website, indicating the URLs and the information contained within each section.
+The URLs on your website that a search engine crawler is permitted to visit are specified in a robots.txt file.
+
+![](docs/screenshot/others/SEO-keywords.png)
+
+
 
 ## Design
 The website is created to look good and be easy to use, and also making it possible for a customer to browse and buy products and services of interest quickly and easily.
