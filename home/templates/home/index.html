@@ -158,7 +158,7 @@
     <div class="justify-content-center aligns-items-center">
         <div class="text-center">
             <h2 class="my-3">What our customers say</h2>
-            <div id="carouselExampleControls" class="carousel slide carousel-dark slide my-5 carousel-width"
+            <div id="carouselExampleControls" class="carousel slide carousel-dark slide my-5 carousel-width"  style="padding: 15px"
                 data-bs-ride="carousel">
                 <div class="carousel-inner text-center" style="padding: 20">
                     {% for comment in comments %}
@@ -178,14 +178,13 @@
                     </div>
                     {% endfor %}
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="text-danger">Previous</span>
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="text-info">Next</span>
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="bg-danger text-black" style="padding: 5px">Previous</span>
+                    <!-- span class="bg-danger carousel-control-prev-icon"  style="padding: 15px" aria-hidden="true"></span  -->
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <!-- <span class="bg-success carousel-control-next-icon"  style="padding: 15px" aria-hidden="true"></span -->
+                    <span class=" bg-success text-black" style="padding: 5px">Next</span>
                 </button>
             </div>
         </div>
