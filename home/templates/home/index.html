@@ -173,16 +173,18 @@
                             height="150">
                         {% endif %}
                         <P>Reviewed by {{ comment.name }}</P>
+                        <!-- had to add style to get review text to wrap on small screens -->
                         <P style="overflow-wrap: break-word; word-break: break-all; white-space: normal; width: 100;">{{ comment.product.name }}</P>
                         <p style="overflow-wrap: break-word; word-break: break-all; white-space: normal; width: 100;">{{ comment.body }}</p>
                     </div>
                     {% endfor %}
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="bg-danger text-black" style="padding: 5px">Previous</span>
+                <!-- lots of work here to get the carousel to look good in BS4 - BS5 looks ok but breaks tables -->
+                <button class="carousel-control-prev d-flex align-items-end" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="btn btn-success text-black" style="padding: 5px">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class=" bg-success text-black" style="padding: 5px">Next</span>
+                <button class="carousel-control-nextd-flex align-items-end" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="btn btn-danger text-black" style="padding: 5px">Next</span>
                 </button>
             </div>
         </div>

@@ -106,8 +106,18 @@ The home page is divided into different sections.
 - The Recently Added Products section displays the most recently added eight products. 
 ![](docs/screenshot/features/recently-added-products.png)
 
-- The comments section displays bootstrap carosel reviews. 
-- It shows the product image, who reviewed it and the review details.
+- The comments section displays bootstrap carousel reviews. 
+
+    It shows the product image, who reviewed it and the review details.
+
+    Lots of work here to get the carousel to look good in BS4.
+
+    BS5 carousel looks better but BS5 breaks tables and uses different code for toast close icons
+
+    Had to remove the border and align the buttons to the bottom.
+
+    Still don't like the faded buttons till you hover.
+
 ![](docs/screenshot/features/review.png)
 
 * [Back to table of contents](#table-of-contents) 
@@ -571,6 +581,14 @@ This prevents users from breaking the functionality of the site, whilst still en
    A similar issue is described here - https://stackoverflow.com/questions/67066334/django-cant-find-my-template-directory-even-though-its-configured-in-settings
    In the end, I resolved it by removing the path element from the template filename, and adding the directory to templates listed in settings.py
    I put in place lots of console logging which I have since removed, but it was nice to see the flow of checkout in the logs.
+
+3) The comments section displays bootstrap carousel reviews. It shows the product image, who reviewed it and the review details.
+    Lots of work here to get the carousel to look good in BS4.
+    BS5 carousel looks better but BS5 breaks table row spacing and uses different code for toast close icons and button layout.
+    Had to remove the BS4 button border and align the button text spans to the bottom.
+    Still don't like the faded buttons till you hover.
+    BS5 also breaks table layout for checkout, product editing/creating and profile info.
+
 
 Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 

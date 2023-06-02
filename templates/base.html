@@ -48,6 +48,9 @@
     {% endblock %}
 
     {% block corejs %}
+    <!-- Had fun trying different versions of jquery, popper, BS4/5 etc but settled on the most efficient combo below -->
+    <!-- still affecting Lighthouse performance but unavoidable at this stage -->
+    <!-- Could have fewer images on home page but that's not the design goal -->
     <script src="https://kit.fontawesome.com/0f9cf7d513.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
