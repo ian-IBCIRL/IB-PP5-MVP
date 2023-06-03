@@ -167,10 +167,9 @@
                         <!-- Product image-->
                         {% if comment.product.image %}
                         <img class="comment-image img-fluid " src="{{ comment.product.image.url }}"
-                            alt="{{ comment.product.name }}" height="150" width="225">
+                            alt="{{ comment.product.name }}">
                         {% else %}
-                        <img class="comment-image img-fluid " src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}"
-                            height="150" width="225">
+                        <img class="comment-image img-fluid " src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}">
                         {% endif %}
                         <P>Reviewed by {{ comment.name }}</P>
                         <!-- had to add style to get review text to wrap on small screens -->
@@ -180,11 +179,11 @@
                     {% endfor %}
                 </div>
                 <!-- lots of work here to get the carousel to look good in BS4 - BS5 looks ok but breaks tables -->
-                <button class="carousel-control-prev d-flex align-items-end" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <button class="carousel-control-prev d-flex align-items-start" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="btn btn-success text-black" style="padding: 5px">Previous</span>
                 </button>
-                <button class="carousel-control-next d-flex align-items-end" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="btn btn-danger text-black" style="padding: 5px; width: 100px;">Next</span>
+                <button class="carousel-control-next d-flex align-items-start" type="button" style="border: 0;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="btn btn-danger text-black" style="padding: 5px">Next</span>
                 </button>
             </div>
         </div>
