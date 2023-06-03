@@ -589,6 +589,8 @@ This prevents users from breaking the functionality of the site, whilst still en
     Still don't like the faded buttons till you hover.
     BS5 also breaks table layout for checkout, product editing/creating and profile info.
 
+4) Trying to get performance improvements in Ligthouse for initial page load.
+     rel="preload" as="style" made the biggest difference to the performance.
 
 Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
