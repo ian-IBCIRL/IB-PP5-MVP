@@ -167,10 +167,10 @@
                         <!-- Product image-->
                         {% if comment.product.image %}
                         <img class="comment-image img-fluid " src="{{ comment.product.image.url }}"
-                            alt="{{ comment.product.name }}" height="150" width="150">
+                            alt="{{ comment.product.name }}" height="150" width="225">
                         {% else %}
                         <img class="comment-image img-fluid " src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}"
-                            height="150" width="150">
+                            height="150" width="225">
                         {% endif %}
                         <P>Reviewed by {{ comment.name }}</P>
                         <!-- had to add style to get review text to wrap on small screens -->
