@@ -37,9 +37,9 @@
                 <div class="card h-100 product">
                     <!-- Product image-->
                     {% if product.image %}
-                    <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="product-image img-fluid card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                     {% else %}
-                    <img class="product-image card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="product-image img-fluid card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
 
             </a>
@@ -101,9 +101,9 @@
                 <div class="card h-100 product">
                     <!-- Product image-->
                     {% if product.image %}
-                    <img class="product-image card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="product-image img-fluid card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
                     {% else %}
-                    <img class="product-image card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="product-image img-fluid card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}
 
             </a>
@@ -166,10 +166,10 @@
                         data-bs-interval="2000">
                         <!-- Product image-->
                         {% if comment.product.image %}
-                        <img class="comment-image" src="{{ comment.product.image.url }}"
+                        <img class="comment-image img-fluid " src="{{ comment.product.image.url }}"
                             alt="{{ comment.product.name }}" height="150" width="150">
                         {% else %}
-                        <img class="comment-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}"
+                        <img class="comment-image img-fluid " src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.product.name }}"
                             height="150" width="150">
                         {% endif %}
                         <P>Reviewed by {{ comment.name }}</P>
