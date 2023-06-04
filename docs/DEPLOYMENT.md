@@ -53,7 +53,8 @@ To return to the main README click [here](/README.md)
 
         DATABASES = {
         'default': dj_database_url.parse('paste-elephantsql-db-url-here')
-    }
+        }
+        
 - In the terminal, run the show migrations command to confirm connection to the external database.
 
         python3 manage.py showmigrations
@@ -67,6 +68,7 @@ To return to the main README click [here](/README.md)
 - Create a superuser for the new database.
 
         python3 manage.py createsuperuser
+        
 - Input a username, email and password when prompted.
 
 - You should now be able to go to the browser tab on the left of the page in elephantsql, click the table queries button and see the user you've just created by selecting the auth_user table.
