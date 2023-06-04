@@ -198,12 +198,11 @@ Individual folders can be tested such as `./manage.py test polshop` for the main
   Or even have a specific TESTING variable.
   If that doesnt work for some reason, we can also un comment the DATABASES settings lines below.
 
-  i.e.
+  i.e. in settings.py change the DEVELOPMENT variable below to TRUE
 
         DEVELOPMENT = False
 
-  and
-
+  and/or uncomment the following if not in a conditional IF: ELSE:
 
         #    DATABASES = {
         #        'default': {
@@ -212,7 +211,7 @@ Individual folders can be tested such as `./manage.py test polshop` for the main
         #        }
         #    }
 
-  And the production settings should pull the DATABASE_URL from the environment.
+  And you can revert to the production settings, which should pull the DATABASE_URL from the environment.
 
         DATABASES = {
                 'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
