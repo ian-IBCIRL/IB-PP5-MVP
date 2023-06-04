@@ -199,26 +199,26 @@ Individual folders can be tested such as `./manage.py test polshop` for the main
   If that doesnt work for some reason, we can also un comment the DATABASES settings lines below.
 
   i.e.
-'''
-DEVELOPMENT = False
-''' 
+
+    DEVELOPMENT = False
 
   and
-'''
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': BASE_DIR / 'db.sqlite3',
-#        }
-#    }
-'''
+
+
+    #    DATABASES = {
+    #        'default': {
+    #            'ENGINE': 'django.db.backends.sqlite3',
+    #            'NAME': BASE_DIR / 'db.sqlite3',
+    #        }
+    #    }
+
 
   And the production settings should pull the DATABASE_URL from the environment.
-'''
-    DATABASES = {
+
+DATABASES = {
         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
     }
-'''
+
 
 To return to the main README click [here](/README.md)
 
