@@ -193,7 +193,8 @@ Individual folders can be tested such as `./manage.py test polshop` for the main
   This is not something we usually want to do in the production database.
   Although it is possible to use the production database, I did not do so at this time, to avoid further risk and over complication.
   
-- Settings.py settings.
+### Settings.py settings.
+
   To get this all to work we can use a conditional statement in settings.py around a DEVELOPMENT variable set to true if testing
   Or even have a specific TESTING variable.
   If that doesnt work for some reason, we can also un comment the DATABASES settings lines below.
