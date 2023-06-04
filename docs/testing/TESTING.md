@@ -167,6 +167,8 @@ To return to the main README click [here](/README.md)
 - Automated testing was conducted for some apps using the "unittest" module from the Python standard library. 
 - This library is is integrated into Django's unit tests. 
 - My current coverage report is [here](/report.txt)
+- Note the database settings also need to be local to have permissions to set up the test environment.
+- See [here](#test-database) for more info about the [test database](#test-database).
 
 I did consider following/modifying the instructions to set up further automated testing on this [page](https://www.digitalocean.com/community/tutorials/how-to-add-unit-testing-to-your-django-project).
 But as automated testing is not required for the MVP, I did not want take the risk of breaking the MVP.
@@ -181,6 +183,42 @@ This shows the name of each file in the project, the number of statements and an
 All tests in the project can be run with the `./manage.py test' command
 
 Individual folders can be tested such as `./manage.py test polshop` for the main project python files, with an associated coverage report.
+
+## Test database
+
+- Note the database settings also need to be local to have permissions to set up the test environment.
+  So that means changing settings.py to redirect the database from the production ElephantSQL to the django local db.
+  This also means the testing runs in the development CLI/IDE environment and not in production.
+  This is primarily so that the Django test libraries can have permission to create, setup and delete the test database.
+  This is not something we usually want to do in the production database.
+  Although it is possible to use the production database, I did not do so at this time, to avoid further risk and over complication.
+  
+- Settings.py settings.
+  To get this all to work we can use a conditional statement in settings.py around a DEVELOPMENT variable set to true if testing
+  Or even have a specific TESTING variable.
+  If that doesnt work for some reason, we can also un comment the DATABASES settings lines below.
+
+  i.e.
+'''
+DEVELOPMENT = False
+''' 
+
+  and
+'''
+#    DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': BASE_DIR / 'db.sqlite3',
+#        }
+#    }
+'''
+
+  And the production settings should pull the DATABASE_URL from the environment.
+'''
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
+'''
 
 To return to the main README click [here](/README.md)
 
