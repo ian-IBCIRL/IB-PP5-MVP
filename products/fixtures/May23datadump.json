@@ -1,7 +1,7 @@
 [
  {
    "model": "products.product",
-   "pk": 101,
+   "pk": 1,
    "fields": {
       "name": "Information Security Policy",
       "category": 1,
@@ -17,7 +17,7 @@
 },
  {
    "model": "products.product",
-   "pk": 102,
+   "pk": 2,
    "fields": {
       "name": "Data Protection Policy",
       "category": 2,

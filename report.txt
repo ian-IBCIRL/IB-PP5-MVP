@@ -3,14 +3,17 @@ Name                                                 Stmts   Miss  Cover
 checkout/__init__.py                                     1      0   100%
 checkout/admin.py                                       12      0   100%
 checkout/apps.py                                         5      0   100%
-checkout/forms.py                                       18     11    39%
+checkout/forms.py                                       18      0   100%
 checkout/migrations/0001_initial.py                      7      0   100%
 checkout/migrations/__init__.py                          0      0   100%
-checkout/models.py                                      51     14    73%
+checkout/models.py                                      51      9    82%
 checkout/signals.py                                      9      2    78%
+checkout/test_forms.py                                  15      0   100%
+checkout/test_models.py                                 24      0   100%
+checkout/test_views.py                                  31      0   100%
 checkout/tests.py                                        1      0   100%
 checkout/urls.py                                         5      0   100%
-checkout/views.py                                       90     74    18%
+checkout/views.py                                       90     59    34%
 checkout/webhook_handler.py                             98     82    16%
 checkout/webhooks.py                                    28     19    32%
 contact/__init__.py                                      0      0   100%
@@ -56,11 +59,12 @@ ordersheet/migrations/__init__.py                        0      0   100%
 ordersheet/models.py                                     1      0   100%
 ordersheet/templatetags/__init__.py                      0      0   100%
 ordersheet/templatetags/order_tools.py                   5      1    80%
+ordersheet/test_views.py                                31      0   100%
 ordersheet/tests.py                                      1      0   100%
 ordersheet/urls.py                                       3      0   100%
-ordersheet/views.py                                     70     63    10%
+ordersheet/views.py                                     70     39    44%
 polshop/__init__.py                                      0      0   100%
-polshop/settings.py                                     71     14    80%
+polshop/settings.py                                     74     16    78%
 polshop/urls.py                                          8      0   100%
 polshop/views.py                                         5      2    60%
 privacy/__init__.py                                      0      0   100%
@@ -82,7 +86,7 @@ products/migrations/__init__.py                          0      0   100%
 products/models.py                                      40      7    82%
 products/tests.py                                        1      0   100%
 products/urls.py                                         3      0   100%
-products/views.py                                      107     91    15%
+products/views.py                                      107     82    23%
 products/widgets.py                                      7      0   100%
 profiles/__init__.py                                     0      0   100%
 profiles/admin.py                                        1      0   100%
@@ -98,4 +102,4 @@ profiles/tests.py                                        1      0   100%
 profiles/urls.py                                         3      0   100%
 profiles/views.py                                       26     10    62%
 ------------------------------------------------------------------------
-TOTAL                                                 1200    449    63%
+TOTAL                                                 1304    387    70%
