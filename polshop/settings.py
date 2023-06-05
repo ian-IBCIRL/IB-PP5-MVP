@@ -140,8 +140,9 @@ WSGI_APPLICATION = 'polshop.wsgi.application'
 
 DEVELOPMENT = True
 
+
 if 'DEVELOPMENT' in os.environ:
-    print("in development settings")
+    print("in development settings for testing etc")
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'polshop@example.com'
     # Use the following database details for automated testing
@@ -164,13 +165,6 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAILPW')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAILUSR')
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
