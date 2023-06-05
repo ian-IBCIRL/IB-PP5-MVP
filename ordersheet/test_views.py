@@ -43,4 +43,3 @@ class ordersheetViewsTests(TestCase):
         self.assertEqual(len(messages), 1)
         self.assertEqual(str(messages[0]),
                          "Updated Information Security Policy quantity to 7")
-
