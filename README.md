@@ -231,11 +231,11 @@ The home page is divided into different sections.
 Future Enhancements user stories [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/milestone/2)
 
 ### Other future features
-- Added product consulting availability hours and displays next date work can be started and completed.
-- An order tracking page with ordersheet linked to multiple delivery options to allow clients to monitor order delivery and scheduling.
-- A 'Favourite' button where clients can save services to their favourites for later use. 
-- Site admin can respond to a message on the site
-- Site admin can respond to and/or delete a comment on the site
+- Could add product consulting availability hours and displays next date work can be started and completed.
+- Could add an order tracking page with ordersheet linked to multiple delivery options to allow clients to monitor order delivery and scheduling.
+- Could add a 'Favourite' button where clients can save services to their favourites for later use. 
+- Could enable Site admin to respond to a message on the site
+- Could enable Site admin to respond to and/or delete a comment on the site
 
 
 ### Web Marketing
