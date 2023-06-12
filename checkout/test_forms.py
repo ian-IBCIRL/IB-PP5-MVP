@@ -36,7 +36,7 @@ class TestForm(TestCase):
 
     def test_all_fields_are_displayed_in_the_form(self):
         form = OrderForm()
-        print("form fields are: ", form.Meta.fields)
+
         self.assertEqual(form.Meta.fields,
                          (
                             'full_name',

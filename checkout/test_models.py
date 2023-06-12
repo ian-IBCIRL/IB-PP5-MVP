@@ -31,8 +31,7 @@ class TestModels(TestCase):
                                         country='Ireland',
                                         county='Kerry',
         )
-        print("order is:", order)
-        print("order id is ", order.id)
+
         self.assertEqual(str(order.county), 'Kerry')
         self.assertEqual(str(order.full_name), 'Joe Jones')
 
@@ -49,8 +48,7 @@ class TestModels(TestCase):
                                         country='Ireland',
                                         county='Kerry',
         )
-        print("order is:", order)
-        print("order id is ", order.id)
+
         order = Order.objects.get(id=1)
         self.assertEqual(str(order.county), 'Dublin')
         self.assertEqual(str(order.full_name), 'Roger Brown')

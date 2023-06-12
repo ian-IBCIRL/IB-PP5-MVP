@@ -142,7 +142,7 @@ DEVELOPMENT = True
 
 
 if 'DEVELOPMENT' in os.environ:
-    print("in development settings for testing etc")
+
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'polshop@example.com'
     # Use the following database details for automated testing
