@@ -4,7 +4,7 @@ from .forms import FaqsForm
 
 class TestForm(TestCase):
     """
-    Test for the form
+    Test for the FAQ form
     """
 
     def test_all_item_is_required(self):

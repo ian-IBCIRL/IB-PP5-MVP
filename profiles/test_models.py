@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for Profile model
     """
 
     def test_if_the_model_returns_a_string(self):

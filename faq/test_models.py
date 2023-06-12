@@ -4,7 +4,7 @@ from .models import Faqs
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for FAQ model
     """
 
     def test_if_it_returns_a_question(self):

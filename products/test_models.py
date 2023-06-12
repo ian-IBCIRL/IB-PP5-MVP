@@ -5,10 +5,10 @@ from .models import Product, Category
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for Product model
     """
 
-    fixtures = [
+    fixtures = [  # set up test data
         'categories.json',
         'user.json',
         'May23datadump.json',
@@ -26,5 +26,3 @@ class TestModels(TestCase):
 
         self.assertEqual(str(product.name), 'Data Protection Policy')
         self.assertEqual(str(product.sku), 'pp5001600425a')
-
-

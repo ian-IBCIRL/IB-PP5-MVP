@@ -4,7 +4,7 @@ from django import forms
 
 class FaqsForm(forms.ModelForm):
     """
-    Display form to the page
+    Display FAQ form to the page
     """
 
     class Meta:

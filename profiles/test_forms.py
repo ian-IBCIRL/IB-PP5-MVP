@@ -4,7 +4,7 @@ from .forms import UserProfileForm
 
 class TestForm(TestCase):
     """
-    Test the forms
+    Test the Profile form
     """
 
     def test_no_fields_are_required(self):

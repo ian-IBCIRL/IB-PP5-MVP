@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Product, Category, Comment
 
+# setup products for admin pages
+
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -23,6 +25,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):

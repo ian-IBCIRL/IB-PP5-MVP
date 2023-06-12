@@ -3,7 +3,7 @@ from django.db import models
 
 class Faqs(models.Model):
     """"
-    Frequently asked questions
+    Frequently asked questions FAQ model
     """
 
     ORDER = 'OR'

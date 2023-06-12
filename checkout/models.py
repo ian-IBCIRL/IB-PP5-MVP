@@ -12,8 +12,8 @@ from profiles.models import UserProfile
 
 class Order(models.Model):
     """
-    The model to keep track of orders in processing, allowing for bag name change to ordersheet.
-    """    
+    The model to keep track of orders in processing, allowing for bag name change to ordersheet. # noqa
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='orders')  # noqa
@@ -77,15 +77,15 @@ class Order(models.Model):
 class OrderLineItem(models.Model):
     """
     A model for each product that is part of each order.
-    """    
+    """
     order = models.ForeignKey(Order, null=False, blank=False,
                               on_delete=models.CASCADE,
                               related_name='lineitems')
     product = models.ForeignKey(Product, null=False, blank=False,
                                 on_delete=models.CASCADE)
-    product_size = models.CharField(max_length=2, null=True, blank=True)  
+    product_size = models.CharField(max_length=2, null=True, blank=True)
     # noqa XS, S, M, L, XL - considering changing to hours, days, weeks etc
-    
+
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6,
                                          decimal_places=2,

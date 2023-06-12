@@ -5,7 +5,7 @@ from .models import Privacy
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for Privacy model
     """
 
     def test_if_the_model_returns_a_string(self):
@@ -17,4 +17,4 @@ class TestModels(TestCase):
             privacy_policy="This is our Privacy Policy"
         )
         self.assertEqual(str(privacytest.title), 'Test Privacy Policy')
-        self.assertEqual(str(privacytest.privacy_policy), 'This is our Privacy Policy')
+        self.assertEqual(str(privacytest.privacy_policy), 'This is our Privacy Policy')  # noqa

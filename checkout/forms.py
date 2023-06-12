@@ -9,7 +9,7 @@ class OrderForm(forms.ModelForm):
     class Meta:
         """
         Choose the model and define the fields
-        """        
+        """
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',

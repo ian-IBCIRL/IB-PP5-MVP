@@ -3,8 +3,6 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
-
 
 def ordersheet(request):
     """ A view that renders the ordersheet contents page """

@@ -5,7 +5,7 @@ from .models import Faqs
 
 class TestViews(TestCase):
     """
-    Test for the views
+    Test for the FAQ view
     """
     # ----------------- Test all the urls
 

@@ -7,7 +7,7 @@ from checkout.models import Order
 
 class TestCheckoutViews(TestCase):
 
-    fixtures = [
+    fixtures = [  # setup test data
         'categories.json',
         'user.json',
         'May23datadump.json',
@@ -15,11 +15,17 @@ class TestCheckoutViews(TestCase):
     ]
 
     def test_Checkout_get(self):
+        """
+        Test checkout url works correctly
+        """
         resp = self.client.get(reverse('checkout'))
         self.assertEqual(resp.status_code, 302)
         self.assertRedirects(resp, "/products/")
 
     def test_Checkout_out_success_view(self):
+        """
+        Test checkout responds correctly to checkout processing
+        """
         user = User.objects.get(id=1)
         order_num = Order.objects.get(id=1)
         print("Checkout success order number is ", order_num)
@@ -45,5 +51,8 @@ class TestCheckoutViews(TestCase):
         self.assertTemplateUsed(resp, 'checkout/checkout_success.html')
 
     def test_cache_checkout_data_get(self):
+        """
+        check 405 when not checkout correctly
+        """
         resp = self.client.get('/checkout/cache_checkout_data/')
         self.assertEqual(resp.status_code, 405)

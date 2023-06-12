@@ -5,7 +5,10 @@ from products.models import Product
 
 
 def ordersheet_contents(request):
-
+    """
+    A function to check if the user can get free services
+    and total cost
+    """
     ordersheet_items = []
     total = 0
     product_count = 0

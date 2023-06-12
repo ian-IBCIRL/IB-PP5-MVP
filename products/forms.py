@@ -4,7 +4,9 @@ from .widgets import CustomClearableFileInput
 
 
 class ProductForm(forms.ModelForm):
-
+    """
+    Create product form
+    """
     class Meta:
         model = Product
         fields = '__all__'

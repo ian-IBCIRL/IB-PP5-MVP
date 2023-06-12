@@ -3,6 +3,7 @@ from .models import Privacy
 
 
 def privacy(request):
+    """ Display privacy page """
     privacy = Privacy.objects.all()
 
     context = {

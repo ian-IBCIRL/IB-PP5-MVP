@@ -3,7 +3,7 @@ from django.test import TestCase
 
 class TestViews(TestCase):
     """
-    Test for the views
+    Test for the Privacy view
     """
 
     def test_privacy_page(self):

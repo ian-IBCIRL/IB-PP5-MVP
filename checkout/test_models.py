@@ -8,7 +8,7 @@ class TestModels(TestCase):
     Test for models
     """
 
-    fixtures = [
+    fixtures = [  # set up test data
         'categories.json',
         'user.json',
         'May23datadump.json',

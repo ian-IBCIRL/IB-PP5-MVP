@@ -3,7 +3,9 @@ from django.utils.text import slugify
 
 
 class Category(models.Model):
-
+    """
+    For product categories
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 

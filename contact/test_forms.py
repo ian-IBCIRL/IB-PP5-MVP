@@ -4,7 +4,7 @@ from .forms import ContactForm
 
 class TestForm(TestCase):
     """
-    Test the form
+    Test the contact form
     """
 
     def test_contact_form(self):

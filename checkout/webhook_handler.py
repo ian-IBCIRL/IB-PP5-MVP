@@ -22,29 +22,22 @@ class StripeWH_Handler:
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
 
-        print("trying to send email to", order.email)
         cust_email = order.email
-        subject = "Hello World"
+
         subject = render_to_string(
             'confirmation_email_subject.txt',
             {'order': order})
-        print("got subject", subject)
-        body = "This is the message body"
+
         body = render_to_string(
             'confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        print("got body", body)
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
         )
-
-        print(subject,
-              body,
-              settings.DEFAULT_FROM_EMAIL,
-              [cust_email])
 
     def handle_event(self, event):
         """
@@ -58,21 +51,17 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
-        print("handling succeeded")
 
         intent = event.data.object
         pid = intent.id
         ordersheet = intent.metadata.ordersheet
         save_info = intent.metadata.save_info
 
-        print("got metadata - ordersheet is:", ordersheet)
-        print("intent.latest_charge is:", intent.latest_charge)
-
         # Get the Charge object
         stripe_charge = stripe.Charge.retrieve(
             intent.latest_charge
         )
-        print("Got stripe charge")
+
         # After a Stripe update on November 16, 2022,
         # the charges attribute is no longer available
         # directly from the payment intent. To get the
@@ -81,12 +70,8 @@ class StripeWH_Handler:
         # same for .amount
 
         billing_details = stripe_charge.billing_details  # noqa updated
-        print("Got details 1")
         shipping_details = intent.shipping
-        print("Got details 2")
         grand_total = round(stripe_charge.amount / 100, 2)  # updated
-
-        print("Got details")
 
         # clean data in shipping details
         for field, value in shipping_details.address.items():
@@ -115,7 +100,6 @@ class StripeWH_Handler:
         while attempt <= 5:
             try:
 
-                print("Trying to verify")
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
@@ -130,7 +114,6 @@ class StripeWH_Handler:
                     original_ordersheet=ordersheet,
                     stripe_pid=pid,
                 )
-                print("Order is::", order)
                 order_exists = True
                 break
             except Order.DoesNotExist:
@@ -139,16 +122,13 @@ class StripeWH_Handler:
                 time.sleep(1)
 
         if order_exists:
-            print("Order exists - sending email", order)
             self._send_confirmation_email(order)
-            print("Email sent")
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',  # noqa
                 status=200)
         else:
             order = None
             try:
-                print("trying to create")
                 order = Order.objects.create(
                     full_name=shipping_details.name,
                     user_profile=profile,
@@ -183,13 +163,11 @@ class StripeWH_Handler:
                             order_line_item.save()
             except Exception as e:
                 if order:
-                    print("deleting order")
                     order.delete()
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
         self._send_confirmation_email(order)
-        print("Sent Email")
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',  # noqa
             status=200)

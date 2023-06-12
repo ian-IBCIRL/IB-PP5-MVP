@@ -4,7 +4,7 @@ from .models import Contact, Address
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for contact models
     """
 
     def test_if_contact_model_returns_a_string(self):

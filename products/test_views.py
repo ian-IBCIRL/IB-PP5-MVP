@@ -4,7 +4,7 @@ from .models import Product
 
 class TestModels(TestCase):
     """
-    Test for models
+    Test for model views
     """
 
     fixtures = [
