@@ -11,7 +11,6 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click 
 The Policy Shop is an online store where clients can purchase a wide range of cybersecurity policies and expertise. 
 Stripe is used as the payment processor. 
 Use the test card number 4242 4242 4242 4242 with a future expiration date, a three-digit CVC, and a five-digit postal code to test the payment functionality.
-The example app used sizes for products i.e. XS, S, M, L, XL. I don't use product sizes for consulting services and time, but am considering changing to hours, days, weeks etc in a future version.
 
 
 ### By [Ian Bowell](https://www.instagram.com/skianianiam/)
@@ -236,6 +235,8 @@ Future Enhancements user stories [here](https://github.com/ian-IBCIRL/IB-PP5-MVP
 - Could add a 'Favourite' button where clients can save services to their favourites for later use. 
 - Could enable Site admin to respond to a message on the site
 - Could enable Site admin to respond to and/or delete a comment on the site
+- The example app used sizes for products i.e. XS, S, M, L, XL. I don't use product sizes for consulting services and time, but am considering changing to hours, days, weeks etc in a future version.
+
 
 
 ### Web Marketing
