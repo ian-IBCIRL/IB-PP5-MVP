@@ -19,21 +19,6 @@ Use the test card number 4242 4242 4242 4242 with a future expiration date, a th
 
 ---
 
-## Table of Contents
-* [Features](#features)
-     - [Future Enhancements](#future-enhancements)
-     - [Web Marketing](#web-marketing)
-* [Design/UX](#design)
-     - [Wireframes](#wireframes)
-     - [Model Schema](#model-schema)
-* [Technologies Used](#technologies-used)
-* [Agile Development](#agile-development)
-* [Testing](#testing)
-* [Deployment](#deployment)
-* [Release History](#release-history)
-* [Credits](#credits)
-
-
 ## Introduction
 
 * [Back to table of contents](#table-of-contents) 
@@ -65,6 +50,22 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
     - Can easily find the policies and services.
     - Have a great user experience.
     - Can purchase policies and services easily.
+
+
+## Table of Contents
+* [Features](#features)
+     - [Future Enhancements](#future-enhancements)
+     - [Web Marketing](#web-marketing)
+* [Design/UX](#design)
+     - [Wireframes](#wireframes)
+     - [Model Schema](#model-schema)
+* [Technologies Used](#technologies-used)
+* [Agile Development](#agile-development)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Release History](#release-history)
+* [Credits](#credits)
+
 
 ## Features
 
