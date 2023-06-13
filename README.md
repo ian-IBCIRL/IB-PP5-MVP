@@ -115,7 +115,7 @@ The home page is divided into different sections.
 
     BS5 carousel looks better but BS5 breaks tables and uses different code for toast close icons
 
-    Had to remove the border and align the buttons to the bottom.
+    Had to remove the border and align the buttons to the top of the carousel.
 
     Still don't like the faded buttons till you hover.
 
