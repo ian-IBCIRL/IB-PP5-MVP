@@ -567,7 +567,6 @@ The site was also tested for responsiveness here https://www.browserstack.com/re
  - HOWEVER, the drawback is that the more advanced functionality of exernal maps, bootstrap and Stripe all need to be included.
  - So I reverted to removing the x-frame checks at this time.
 
-
 ### Bugs of note
 
 It is difficult to enforce input validation to image file types. 
@@ -598,6 +597,9 @@ This prevents users from breaking the functionality of the site, whilst still en
 
 4) Trying to get performance improvements in Ligthouse for initial page load.
      rel="preload" as="style" made the biggest difference to the performance.
+
+5) Slight layout issue for the ordersheet on mobile screens in changing order quantity
+   I have seen how to fix this with a different mobile layout for the ordersheet but not applied it yet
 
 Further details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
