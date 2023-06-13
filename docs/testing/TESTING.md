@@ -450,11 +450,11 @@ To return to the main README click [here](/README.md)
 - As a site user I can see the delivery cost so that I know how much I am paying for delivery 
 
 **Expected Results**
-- Add a product to the basket that is less than €30, and you will be notified how much you need to spend more to get free delivery.
+- Add a product to the ordersheet that is less than €500, and you will be notified how much you need to spend more to get free consulting.
 - When you go the OrderSheet page, you can see the delivery cost for the purchase 
 
 **Actual Results**
-- Add a product to the basket that is less than €30, and you will be notified how much you need to spend more to get free delivery.
+- Add a product to the basket that is less than €500, and you will be notified how much you need to spend more to get free consulting.
 - When you go the OrderSheet page, you can see the delivery cost for the purchase 
 
 
