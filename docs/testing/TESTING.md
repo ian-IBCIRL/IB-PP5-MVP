@@ -255,7 +255,7 @@ To return to the main README click [here](/README.md)
 * [Back to top of TESTING.md](#testing) 
 
 
-### As a site user I can **see review of each products ** so that I know the opinion of other people
+### As a site user I can **see review of each product or service** where given so that I know the opinion of other people
 
 [USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
  
