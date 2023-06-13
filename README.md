@@ -537,10 +537,12 @@ I decided against implementing some future features at this time due to deadline
 
 Testing is in different sections and individually tested with test cases developed for each function.
 
-I managed to get [automated](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) testing to work [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) for Profiles and FAQs models.
+I managed to get [automated](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) testing to work [here](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) initially for Profiles and FAQs models, and then further model coverage.
+
+I got automated testing to work for most of the models, with up to 76% coverage overall, according to the coverage [report](/report.txt)
 
 I will continue to develop [automated](https://github.com/ian-IBCIRL/IB-PP5-MVP/blob/main/docs/testing/TESTING.md#automated-testing) testing and continue to check coverage.
-I also found this YouTube series helpful for the testing [section](https://www.youtube.com/watch?v=3R62qpDhQfI&list=PLx-q4INfd95ESFMQ1Je3Z0gFdQLhrEuY7&index=31) and will work to add more test refactoring and other features in later forks, after the MVP grade.
+I also found this YouTube series helpful for the testing [section](https://www.youtube.com/watch?v=3R62qpDhQfI&list=PLx-q4INfd95ESFMQ1Je3Z0gFdQLhrEuY7&index=31) and will work to add more test refactoring and other features in later forks, after the assessor review.
 
 Details of the [testing](/docs/testing/TESTING.md) procedures and methodology can be found in the testing.md file [here](/docs/testing/TESTING.md)
 
