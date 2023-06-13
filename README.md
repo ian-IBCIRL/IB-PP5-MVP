@@ -698,6 +698,7 @@ Here is the version history:
 -   ### Source code
 
     - Code Institute Django course material, tutors, mentors and colleagues in Slack channels.
+    - In particular, Ronan and some of his previous mentees.
     - Bootstrap documentation https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
     
 -   ### Images
