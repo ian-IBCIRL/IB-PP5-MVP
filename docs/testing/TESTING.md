@@ -194,6 +194,15 @@ Individual folders can be tested such as `./manage.py test checkout` for the che
   This is not something we usually want to do in the production database.
   Although it is possible to use the production database, I did not do so at this time, to avoid further risk and over complication.
   
+  I was also able to preload the test database with fixtures code like the following in each test.
+  
+        fixtures = [  # set up test data
+                'categories.json',
+                'user.json',
+                'May23datadump.json',
+                'checkout.json'
+        ]
+  
 ### Settings.py settings.
 
   To get this all to work we can use a conditional statement in settings.py to check a DEVELOPMENT environment variable set to true in env.py, if testing
