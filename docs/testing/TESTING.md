@@ -38,16 +38,24 @@ See more details in Lighthouse testing results and attempts to improve image loa
 > If the expected outcome appears then a given test will be noted as a pass. If it does not then a fail is noted.
 
 #### Account Registration Tests
+[USER STORY: account registration](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/43)
+[USER STORY: Setup Authentication](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 | User can create account | the sign up page creates a new user when correctly completed | Pass |
 | User can log into account| the new user can sign in and their name appears in the main page and subsequent orders made | Pass|
 | User can log out of account| the logout option returns to the main non logged in page with the register and login options| Pass|
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 ---
 
 #### User Navigation Tests
-
+[USER STORY: Site Menu](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/50)
+[USER STORY: Product and services setup](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/7)
+[USER STORY: Setup Base Page](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/4)
+[USER STORY: Setup Home Page (index.html)](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/5)
 | Test | Expected Result | Actual Result  |
 |--|--|--|
 |User can navigate to Product Details | Product details are displayed when product clicked in list | Pass |
@@ -57,7 +65,13 @@ See more details in Lighthouse testing results and attempts to improve image loa
 ---
 
 #### Account Security Tests
-
+[USER STORY: Create order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/44)
+[USER STORY: Update order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/45)
+[USER STORY: Delete my orders only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/46)
+[USER STORY: Adjusting and Deleting Products](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/14)
+[USER STORY: Adding Products to catalog as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/27)
+[USER STORY: Editing Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/28)
+[USER STORY: Deleting Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/29)
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 |Not logged in user cannot add a product | Not logged in User cannot create a product (cut and paste create link) and returns to the login page |Pass |
@@ -66,8 +80,23 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 ---
 
-#### Policy Viewing and Purchasing Tests
+To return to the main README click [here](/README.md)
 
+* [Back to top of TESTING.md](#testing) 
+
+#### Policy Viewing and Purchasing Tests
+[USER STORY: Setup User profiles](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/19)
+[USER STORY: Adding Users with Profiles](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/20)
+[USER STORY: Adjust allauth default pages](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/21)
+[USER STORY: Adjusting user profile and default delivery info](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/22)
+[USER STORY: Adding Order History to User Profile](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/23)
+[USER STORY: Create order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/44)
+[USER STORY: Update order for me only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/45)
+[USER STORY: Delete my orders only](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/46)
+[USER STORY: Adjusting and Deleting Products](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/14)
+[USER STORY: Adding Products to catalog as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/27)
+[USER STORY: Editing Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/28)
+[USER STORY: Deleting Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/29)
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 |User can save a profile or order when all required fields are completed | if fields are missing, informative errors are flagged, and completes successfully when form is complete | Pass |
@@ -85,16 +114,22 @@ See more details in Lighthouse testing results and attempts to improve image loa
 --- 
 
 #### Account Tests
-
+[USER STORY: account registration](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/43)
+[USER STORY: Setup Authentication](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/2)
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 |User cannot register username to the same as another user| trying an existing username fails if it already exists |Pass|
 |User cannot register their email to the same as another user | trying an existing email fails if it is already recorded |Pass|
 |User presented with correct date and time on an order | Date and time are shown correctly for time of order submission  |Pass|
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 #### Admin Tests
-
+[USER STORY: Adding Products to catalog as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/27)
+[USER STORY: Editing Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/28)
+[USER STORY: Deleting Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/29)
 | Test |Expected Result | Actual Result  |
 |--|--|--|
 |Admin can add products to site| Admin panel has the option to add products and products appear when published  |Pass|
@@ -110,7 +145,6 @@ To return to the main README click [here](/README.md)
 ### User Story
 
 ### As a User
-
 
 - I can rapidly grasp what the website is presenting so that I can determine whether it satisfies my needs.
 
@@ -139,6 +173,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can see the featured products so that I know which items are featured
 
@@ -153,6 +190,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can see the menu all the time so that I don't have to scroll all the way up
 **Acceptance Criteria:**
@@ -168,9 +208,14 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can search products so that I can find them easily 
-
+[USER STORY: Product Filtering](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/8)
+[USER STORY: Product Searching](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
+[USER STORY: Product Sorting](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/10)
 **Acceptance Criteria:**
 - User can search for products
 - User can click on the searched products to view the products
@@ -189,7 +234,9 @@ To return to the main README click [here](/README.md)
 **Results: Pass**
 
 ### As a site user I can sort out products so that I can view them in different ways 
-
+[USER STORY: Product Filtering](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/8)
+[USER STORY: Product Searching](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/9)
+[USER STORY: Product Sorting](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/10)
 **Acceptance Criteria:**
 - User can sort out the products
 
@@ -203,8 +250,15 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
+
+
 ### As a site user I can **see review of each products ** so that I know the opinion of other people
 
+[USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
+ 
 **Acceptance Criteria:**
 - As a site user I can see review of each products so that I know the opinion of other people
 
@@ -219,6 +273,10 @@ To return to the main README click [here](/README.md)
 - User can also see review in the home page in a carousel 
 
 **Results: Pass**
+
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can change the quantity so that I can add the required number of items in the ordersheet
 
@@ -248,6 +306,10 @@ To return to the main README click [here](/README.md)
 - The user is notified about their interaction
 
 **Results: Pass**
+
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can adjust ordersheet quantity so that I don not have to go back to products to adjust my Ordersheet
 
@@ -285,6 +347,10 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
+
 ### As a user I can see the number of items in the OrderSheet so that I can keep track of what I am purchasing 
 
 **Acceptance Criteria:**
@@ -321,6 +387,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can see the total cost so that I can track my total purchasing amount 
 
@@ -353,6 +422,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### Orders and Checkout - Delete OrderSheet items 
 
@@ -388,6 +460,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can register and login to my account so that I can store my details securely 
 
@@ -430,6 +505,9 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a site user I can login so that I can keep track of my purchases and store my details securely
 
@@ -472,8 +550,11 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
 
-### As a Store Owner
+* [Back to top of TESTING.md](#testing) 
+
+### As a Store Admin
 
 ### As a admin I can add products from the site so that I do not have to log in to the admin site 
 
@@ -507,9 +588,14 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a admin I can delete item so that I can move it from website
-
+[USER STORY: Adding Products to catalog as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/27)
+[USER STORY: Editing Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/28)
+[USER STORY: Deleting Products as Admin](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/29)
 **Acceptance Criteria:**
 - Store owners can delete products
 
@@ -526,6 +612,8 @@ To return to the main README click [here](/README.md)
 **Results: Pass**
 
 ### As a Admin I can add faqs so that I can faqs easily to the page 
+[USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
+[USER STORY: FAQ app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/33)
 
 **Acceptance Criteria:**
 - Store owners can add faqs
@@ -543,8 +631,13 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As a Admin I can add faqs so that I can faqs easily to the page
+[USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
+[USER STORY: FAQ app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/33)
 
 **Acceptance Criteria:**
 - Store owners can edit faqs
@@ -558,9 +651,14 @@ To return to the main README click [here](/README.md)
 
 **Actual Results**
 - Store owners or admin can edit faqs without logging into the admin site
+[USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
+[USER STORY: FAQ app/model](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/33)
 
 **Results: Pass**
 
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ### As an admin I can delete faqs so that I can remove from the page
 
@@ -581,6 +679,7 @@ To return to the main README click [here](/README.md)
 
 
 ### As a Admin I can approve or delete comments so that I can keep my website safe 
+[USER STORY: Adjust models for new PP5 data/features](https://github.com/ian-IBCIRL/IB-PP5-MVP/issues/32)
 
 **Acceptance Criteria:**
 - Only the admin can approve or delete comments
@@ -596,6 +695,10 @@ To return to the main README click [here](/README.md)
 **Results: Pass**
 
 ---
+
+To return to the main README click [here](/README.md)
+
+* [Back to top of TESTING.md](#testing) 
 
 ## Google Lighthouse Testing
 
