@@ -183,10 +183,10 @@ To return to the main README click [here](/README.md)
 - Users can view the featured products on the home page
 
 **Expected Results**
-- A list of Featured  products should be displayed on the page [Image](docs/screenshot/testing/featured-product.png)
+- A list of Featured  products should be displayed on the page 
 
 **Actual Results**
-- A list of recently added products is displayed on the page [Image](docs/screenshot/testing/featured-product.png)
+- A list of recently added products is displayed on the page 
 
 **Results: Pass**
 
@@ -246,7 +246,7 @@ To return to the main README click [here](/README.md)
 - Click on any of the drop-down menus, and the products will be sorted accordingly.
 
 **Actual Results**
-- The products are sorted accordingly when clicked on it [Image](docs/screenshot/testing/sort.png)
+- The products are sorted accordingly when clicked on it 
 
 **Results: Pass**
 
