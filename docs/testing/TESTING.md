@@ -33,6 +33,8 @@ See more details in Lighthouse testing results and attempts to improve image loa
 
 > Each user story was manually tested in line with intended functionality on both desktop & mobile.
 > As this project was detailed by User Stories, manual testing was sufficient for all code, and met project requirements.
+> Automated testing was also performed with up to 76% coverage overall, according to the coverage [report](/report.txt)
+> I managed to get [automated](#automated-testing) testing to work for most of the models.
 > If the expected outcome appears then a given test will be noted as a pass. If it does not then a fail is noted.
 
 #### Account Registration Tests
@@ -218,7 +220,7 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
-### As a site user I can change the quantity so that I can add the required number of items in the bag
+### As a site user I can change the quantity so that I can add the required number of items in the ordersheet
 
 **Acceptance Criteria:**
 - User can change the quantity of the products
@@ -227,7 +229,7 @@ To return to the main README click [here](/README.md)
 **Expected Results**
 - Navigate to any product detail page and you will see a +/- button
 - Click on the +/- button to change the quantity of the items 
-- Click "Add to Bag" to add the product to the bag 
+- Click "Add to Ordersheet" to add the product to the ordersheet
 
 **Actual Results**
 - The +/- button changes the quantity of the products
@@ -247,16 +249,16 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
-### As a site user I can adjust shopping bag quantity so that I don not have to go back to products to adjust my bag 
+### As a site user I can adjust ordersheet quantity so that I don not have to go back to products to adjust my Ordersheet
 
 **Acceptance Criteria:**
 - User can change the quantity of the products
 - The +/- button will be disable at 1 and 100,
 
 **Expected Results**
-- Navigate to the shopping bag page and you will see a +/- button
+- Navigate to the OrderSheet page and you will see a +/- button
 - Click on the +/- button to change the quantity of the items 
-- Click "Add to Bag" to add the product to the bag 
+- Click "Add to OrderSheet" to add the product to the OrderSheet
 - The +/- button is disabled at 1 and 100,
 
 **Actual Results**
@@ -272,7 +274,7 @@ To return to the main README click [here](/README.md)
 - Users need to receive an email with the order confirmation
 
 **Expected Results**
-- Navigate to the shopping bag page and complete an order
+- Navigate to the OrderSheet page and complete an order
 - You will see checkout success page with your order details 
 - You will also receive an email with your order details 
 
@@ -283,18 +285,19 @@ To return to the main README click [here](/README.md)
 
 **Results: Pass**
 
-### As a user I can see the number of items in shopping bag so that I can keep track of what I am purchasing 
+### As a user I can see the number of items in the OrderSheet so that I can keep track of what I am purchasing 
 
 **Acceptance Criteria:**
-- Users can see the number of each product in the bag
-- Users can update the number of products from the bag
+- Users can see the number of each product in the OrderSheet
+- Users can update the number of products from the OrderSheet
 
 **Expected Results**
-- Navigate to the shopping bag page and you will see a +/- button
-- The number of items in the bag is displayed between the + and - buttons 
+- Navigate to the ordersheet page and you will see a +/- button
+- The number of items in the ordersheet is displayed between the + and - buttons 
 
 **Actual Results**
-- The number of items in the bag is displayed between the + and - buttons 
+- The number of items in the ordersheet is displayed between the + and - buttons 
+- Slight layout issue on mobile screens - i have seen how to fix this with a different mobile layout for the ordersheet but not applied it yet
 
 **Results: Pass**
 
@@ -302,14 +305,15 @@ To return to the main README click [here](/README.md)
 ### As a site user I can see the price of individual items so that I know how much I am spending on each item 
 
 **Acceptance Criteria:**
-- Users can see the number of each product in the bag and their individual price
+- Users can see the number of each product in the ordersheet and their individual price
 - Users can see the subtotal of a product as well
 
 **Expected Results**
 - Navigate to the ordersheet page and you will see a +/- button
-- The number of items in the bag is displayed between the + and - buttons 
+- The number of items in the Ordersheet is displayed between the + and - buttons 
 - The individual price of each item is displayed on the right side
 - Subtotal is displayed at the far end 
+- Slight layout issue on mobile screens - i have seen how to fix this with a different mobile layout for the ordersheet but not applied it yet
 
 **Actual Results**
 - The individual price of each item is displayed on the right side
@@ -324,11 +328,11 @@ To return to the main README click [here](/README.md)
 - Users can see the total price of the products
 
 **Expected Results**
-- Add some products to the shopping bag and navigate to the shopping bag
-- The total price of the items in the bag is shown at the bottom, right hand side 
+- Add some products to the Ordersheet and navigate to the OrderSheet
+- The total price of the items in the OrderSheet is shown at the bottom, right hand side 
 
 **Actual Results**
-- The total price of the items in the bag is shown at the bottom, right hand side 
+- The total price of the items in the OrderSHeet is shown at the bottom, right hand side 
 
 **Results: Pass**
 
@@ -339,7 +343,7 @@ To return to the main README click [here](/README.md)
 - As a site user I can enter my delivery and shipping info so that I can checkout quickly and easily
 
 **Expected Results**
-- Add a product and go to the shopping bag and go to checkout page
+- Add a product and go to the OrderSheet and go to checkout page
 - Enter your details to purchase the product 
 - No need to sign up to purchase item unless you want to save your details for future
 
@@ -350,14 +354,14 @@ To return to the main README click [here](/README.md)
 **Results: Pass**
 
 
-### Orders and Checkout - Delete Shopping bag items 
+### Orders and Checkout - Delete OrderSheet items 
 
 **Acceptance Criteria:**
 
--  As a site user I can get a notification if i want to delete items from bag so that I can correct my mistake if I pressed the delete button accidentally 
+-  As a site user I can get a notification if i want to delete items from OrderSheet so that I can correct my mistake if I pressed the delete button accidentally 
 
 **Expected Results**
-- Add a product and go to the shopping bag
+- Add a product and go to the shopping OrderSheet
 - Click on delete product
 - Notify users if they really want to delete the product 
 - On final confirmation delete the product
@@ -375,11 +379,11 @@ To return to the main README click [here](/README.md)
 
 **Expected Results**
 - Add a product to the basket that is less than €30, and you will be notified how much you need to spend more to get free delivery.
-- When you go the bag page, you can see the delivery cost for the purchase 
+- When you go the OrderSheet page, you can see the delivery cost for the purchase 
 
 **Actual Results**
 - Add a product to the basket that is less than €30, and you will be notified how much you need to spend more to get free delivery.
-- When you go the bag page, you can see the delivery cost for the purchase 
+- When you go the OrderSheet page, you can see the delivery cost for the purchase 
 
 
 **Results: Pass**
