@@ -590,6 +590,8 @@ This prevents users from breaking the functionality of the site, whilst still en
 
 3) The comments section displays bootstrap carousel reviews. It shows the product image, who reviewed it and the review details.
     Lots of work here to get the carousel to look good in BS4.
+    Note that comments will show up in the carousel before approval, but not in the product details.
+    This was a conscious decision to give comments some visibility, but can still be approved and deleted by admin.
     BS5 carousel looks better but BS5 breaks table row spacing and uses different code for toast close icons and button layout.
     Had to remove the BS4 button border and align the button text spans to the bottom.
     Still don't like the faded buttons till you hover.
