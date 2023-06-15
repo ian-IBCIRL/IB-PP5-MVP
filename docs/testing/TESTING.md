@@ -199,11 +199,9 @@ To return to the main README click [here](/README.md)
 - The navigation menu must be user-friendly and stays on top of the page
 
 **Expected Results**
-- The drop down menu opens up on hover, so that users do not need to click on it
 - The menu stays on top all the time 
 
 **Actual Results**
-- The drop down menu opens up on hover, so that users do not need to click on it
 - The menu stays on top all the time 
 
 **Results: Pass**
