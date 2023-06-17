@@ -199,10 +199,11 @@ The home page is divided into different sections.
 
     ![](docs/screenshot/features/contact.png)
 
-### Error 404 Page
+### Error 404 Page and 500 error Page
 
 - A 404 error page gives the user a helpful message if a link is used incorrectly.
 - It also gives the user a way to get back to the home page with a link.
+- The 500 error page also provides response if something goes wrong in the code on the server, with a way to recover, without debug messaging.
 
     ![](docs/screenshot/features/404.png)
 
