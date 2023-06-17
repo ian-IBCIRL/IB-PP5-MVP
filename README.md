@@ -42,7 +42,7 @@ Note: To open any links in this README in a new browser tab, press CTRL + Click.
 ### **[Link to Responsive Testing Examples on UI.dev](https://ui.dev/amiresponsive?url=https://ib-pp5-polshop.herokuapp.com/)**
 
 ### Site Goals
-- Site owner aim
+- Site owner aim and business model.
     - Site owner can effectively sell their policies and services.
     - Site owner add or update their available policies and services.
     - Site owner can highlight their policies and services in sale or featured products category.
